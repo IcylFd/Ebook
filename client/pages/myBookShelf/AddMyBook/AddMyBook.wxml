@@ -1,0 +1,44 @@
+<view>
+  <view class='msg'>
+    <view>*书籍名称</view>
+    <input class='input-box'></input>
+  </view>
+  <view class='msg'>
+    <view>*作者</view>
+    <input class='input-box'></input>
+  </view>
+  <view class='msg'>
+    <view>*想换书籍</view>
+    <input class='input-box'></input>
+  </view>
+  <view class='add-img-wrapper'>
+    <view class='add-img'>
+      <view class='add-img-text' catchtap='onTapCover'>
+      <view>封面</view>
+      <image src='../../img/bookshelf-img/plus.png'></image>
+      </view>
+      <image class='cover' src='{{coverImgPath}}' ></image>
+    </view>
+
+    <view class='add-img'>
+      <view class='add-img-text' catchtap='onTapBack'>
+        <view>背面</view>
+        <image src='../../img/bookshelf-img/plus.png'></image>
+      </view>
+      <image class='back' src='{{backImgPath}}' ></image>
+    </view>
+  </view>
+  <view class='msg'>
+    <view>出版社</view>
+    <input class='input-box'></input>
+  </view>
+
+  <view class='msg'>
+    <view>简介</view>
+    <input class='input-box'></input>
+  </view>
+
+  <!-- <button class='reset' form-type='reset'>重置</button> -->
+  <button class='submit' form-type='submit'>提交</button>
+
+</view>

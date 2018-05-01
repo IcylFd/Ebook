@@ -1,0 +1,9 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Micro Soft;
+  font-size: 24rpx;
+} 

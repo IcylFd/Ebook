@@ -1,0 +1,23 @@
+page{
+  height:auto;
+  background-image:url("https://pic4.zhimg.com/054975041082e64aff650afed24f5798_r.jpg");
+  background-size: cover;
+}
+.date-container{
+  width:200rpx;
+  margin-left:20rpx;
+  color: #fff;
+}
+.day{
+  font-size: 90rpx;
+}
+.month-year{
+  font-size: 35rpx;
+}
+.enter-button{
+  position: absolute;
+  width:80rpx;
+  height:70rpx;
+  top:50%;
+  right:20rpx;
+}

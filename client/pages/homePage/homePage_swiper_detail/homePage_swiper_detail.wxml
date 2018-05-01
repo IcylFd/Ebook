@@ -1,0 +1,38 @@
+<!--pages/homePage/homePage_swiper_detail/homePage_swiper_detail.wxml-->
+<import src="../../template/template_comment/template_comment.wxml"/>
+<view id='homePage_swiper_detail'>
+  <view id='topPart'>
+    <view id='top'>
+      <view id='bookImage'>
+        <image src='{{book.bookImage}}' mode='scaleToFill'></image>
+      </view>   
+      <view id='bookMessage'>
+        <text id='bookName'>{{book.bookName}}</text>
+        <text id='bookAuthor'>{{book.bookAuthor}}</text>
+      </view>
+    </view>
+    <view id='bottom'>
+        <text>谁有这本书</text>
+        <view id='scroll_box'>
+          <scroll-view id='haver_swiper' scroll-x>
+            <block wx:for="{{book_haver}}">
+              <view class='haver_swiper_item' bindtap='onAvatorTap'>
+                <image src='{{item.image}}'></image>
+              </view>
+            </block>
+          </scroll-view>
+        </view>
+    </view>
+  </view>
+  <scroll-view id='selectComments' scroll-y>
+    <block wx:for="{{comments}}">
+      <template is="comment_piece" data="{{item}}"/>
+    </block>
+  </scroll-view>
+  <view id='to_favorite'>
+    <input id='to_favorite_input' placeholder='输入您的评论..' placeholder-class="placeholder" bindfocus="input_focus"></input>
+    <image src='../../../images/like.png' ></image>
+    <image src='../../../images/discuss.png' ></image>
+    <image src='../../../images/share.png' ></image>
+  </view>
+</view>

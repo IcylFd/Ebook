@@ -1,0 +1,18 @@
+<view class='book-title'>
+  <image class='book-img' src="../../img/books/book6.jpg"></image>
+  <text class='title'>高等数学</text>
+  <text class='author'>第六版</text>
+</view>
+
+<view class='details'>
+  <text class='left'>上架时间</text>
+  <text class='right'>2018.4.28</text>
+</view>
+<view class='details'>
+  <text class='left'>想换书籍</text>
+  <text class='right'>白夜行</text>
+</view>
+<view class='details'>
+  <text class='left'>距下架还有</text>
+  <text class='right'>6天</text>
+</view>

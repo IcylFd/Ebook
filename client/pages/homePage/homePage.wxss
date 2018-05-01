@@ -1,0 +1,193 @@
+/* pages/homePage/homePage.wxss */
+#homePage{
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  background-image: url("http://image.suning.cn/uimg/sop/commodity/201404111833019508_x.jpg");
+}
+#topPart{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 25rpx 0;
+  margin-bottom: 0;
+  position: relative;
+}
+#rank_list_text{
+  display: inline-block;
+  height: 20%;
+  color: gray;
+  margin:0 auto;
+  font-size: 30rpx;
+}
+#rank_list_swiper{
+  width: 100%;
+  height: 80%;
+}
+.rank_list_swiper_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.rank_list_swiper_item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+
+#bottomPart_select{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#bottomPart_select text{
+  display: inline-block;
+  text-align: center;
+  line-height: 84rpx;
+  width: 20%;
+  height: 80%;
+  margin: 0 50rpx;
+  color: gray;
+  font-size: 30rpx;
+}
+#bottomPart_select view{
+  transition: all .3s ease-in-out;
+}
+#bottomPart_select #bottom_border_left{
+  position: absolute;
+  width: 20%;
+  height: 0;
+  border: 1px solid red;
+  top: 90rpx;
+  left: 170rpx;
+}
+#bottomPart_select #bottom_border_right{
+  position: absolute;
+  width: 20%;
+  height: 0;
+  border: 1px solid red;
+  top: 90rpx;
+  left: 420rpx;
+}
+
+
+
+#bottomPart{
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+/* 背景轮播图遮罩层 */
+#homePage_backswiper_maxk{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+/* 背景轮播图 */
+#homePage_backswiper{
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#homePage_backswiper image{
+  width: 100vw;
+  height: 100%;
+}
+/* 轮播图 */
+#homePage_swiper{
+  width: 100%;
+  height: 60%;
+  z-index: 10;
+  margin-top: 200rpx;
+}
+.swiper_item{
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: center;
+  height: 100rpx;
+}
+.swiper_item_content{
+  width: 85%;
+  height: 100%;
+  border-radius: 20rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("../../images/background.jpg");
+  z-index: 2;
+}
+.content_bookMessage{
+  width: 100%;
+  height: 25%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.content_bookMessage image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 0 20rpx;
+}
+.content_bookintroduce{
+  width: 100%;
+  height: 55%;
+  /* background-color: rgb(53, 207, 66); */
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.content_bookintroduce text{
+  display: -webkit-box;
+  width: 90%;
+  height: 90%;
+  font-size:24rpx;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content_button{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content_button image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}

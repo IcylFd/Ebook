@@ -1,0 +1,65 @@
+/* pages/myBookShelf/myBookShelf.wxss */
+.back{
+  background-image: url("http://www.taopic.com/uploads/allimg/140831/240409-140S10K22842.jpg");
+  height:auto;
+}
+.search{
+  margin-top:10rpx;
+  width:92%;
+  height:70rpx;
+  background-color: #fff; 
+  border-radius: 10px;
+  float:left;
+  margin-left:4%;
+  position: relative;
+}
+.searchbox{
+  position: absolute;
+  top:15rpx;
+  left:80rpx;
+  
+}
+ .search image{
+  width:35rpx;
+  height:35rpx;
+  margin-left: 20rpx;
+  margin-top:18rpx;
+  z-index: 2;
+} 
+.shelf{
+  display: flex;
+  width:100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.add-book{
+  width:200rpx;
+  height:300rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+.seprate{
+  width:690rpx;
+  height:6rpx;
+  border-radius: 10rpx;
+  box-shadow: 3rpx 3rpx 6rpx 0;
+  background-color: #fff;
+  position: relative;
+  left:30rpx; 
+}
+.book-img{
+  display: flex;
+  width:200rpx;
+  height:300rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin-top:50rpx;
+  margin-left: 38rpx; 
+}
+.plus{
+  width:80rpx;
+  height:80rpx;
+  position: absolute;
+  top:230rpx;
+  left:100rpx;
+}

@@ -1,0 +1,89 @@
+/* pages/homePage/others_detail/others_detail.wxss */
+@import "../../template/template_waterFallView/template_waterFallView.wxss";
+@import "../../template/template_comment/template_comment.wxss";
+#others_detail{
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background-color: #f5f7f9;
+}
+#others_message{
+  width: 100%;
+  height: 35vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#others_image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+#others_name{
+  font-size: 30rpx;
+  margin: 20rpx 0;
+}
+#sexAdengji{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sexAdengji image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx 20rpx;
+}
+#sexAdengji text{
+  font-size: 24rpx;
+  margin: 20rpx 20rpx;
+}
+#booksAarticals{
+  width: 100%;
+  min-height: 65vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+}
+#choose_show{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.extrude{
+  color: sandybrown;
+  font-size: 40rpx;
+}
+.normal{
+  color: gray;
+  font-size: 40rpx;
+}
+
+#show_books{
+  width: 90%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: scroll;
+  
+}
+
+#show_articals{
+  width: 100%;
+  height: auto;
+  background-color: rgba(230, 233, 232, 0.863);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

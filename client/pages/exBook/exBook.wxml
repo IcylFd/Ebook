@@ -1,0 +1,23 @@
+<!--pages/exBook/exBook.wxml-->
+<import src="../template/template_waterFallView/template_waterFallView.wxml"/>
+<view id='exBook'>
+  <view id='search_box'>
+    <view id='search_container'>
+      <image src='../img/search.png'></image>
+      <input type='text'></input>
+    </view>
+  </view>
+  <view id='navigation'>
+    <view id='classify'>
+      <text class='checked'>最新</text>
+      <text>高数</text>
+      <text>英语</text>
+      <text>四六级</text>
+      <text>考研</text>
+    </view>
+    <image id='pull_down' src='../../images/arrowup.png'></image>
+  </view>
+  <view id='exhibition'>
+    <template is="waterFallView" data="{{booksArray}}"/>
+  </view>
+</view>

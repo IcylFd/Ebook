@@ -1,0 +1,48 @@
+/* pages/myBookShelf/myBookDetails/myBookDetails.wxss */
+page{
+  background-color: #f5f7f9;
+}
+.book-title{
+  height:30vh;
+  width:100%;
+  background-color: #fff;
+}
+.title{
+  position: absolute;
+  top:50rpx;
+  left:350rpx;
+  font:bold;
+  font-size: 40rpx;
+  color: #333;
+}
+.author{
+  position: absolute;
+  top:150rpx;
+  left:350rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.book-img{
+  height:300rpx;
+  width:220rpx;
+  margin-left:80rpx;
+  margin-top:30rpx;
+}
+.details{
+  height:100rpx;
+  background-color: #fff;
+  margin-top:20rpx;
+}
+.details text{
+  font-size: 28rpx;
+  line-height: 100rpx;
+}
+.left{
+  margin-left:60rpx;
+  color: #4c4c4c;
+}
+.right{
+  float:right;
+  margin-right: 60rpx;
+  color: #333;
+}

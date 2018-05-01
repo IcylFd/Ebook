@@ -1,0 +1,78 @@
+.item{
+  background-color: #fff; 
+  margin: 4%; 
+   margin-top:10rpx;  
+  margin-bottom: 20rpx;
+  display: inline-block;
+  text-align: center;
+  border-radius: 15rpx;
+  box-shadow: 6rpx 6rpx 3rpx #c9c9c9;
+}
+
+.item-ava{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 100%;
+}
+.item-img{
+  margin-top: 20rpx;
+  width: 90%
+  
+}
+
+.exchange-button{
+  border-radius: 20rpx;
+  background-color: #bbc5ef;
+  align-items: center;
+  width:100rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  color:#fff;
+  font-size: 24rpx;
+}
+
+
+.item-title{
+  font-size: 26rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #333;
+  margin: 15rpx;
+  line-height: 27rpx;
+}
+.item .name{
+  display: flex;
+  padding: 0 15rpx;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  align-items: center;
+  font-size: 23rpx;
+  color: #333;
+}
+.name image{
+  flex: 0 0 30rpx;
+}
+.item-title-box{
+  display: flex;
+  position: relative;
+}
+.name-title{
+  flex: 1;
+  margin-left: 18rpx;
+  margin-right: 20rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.name text:last-child{
+  flex: 0 0 30rpx;
+  color: #c4c4c4;
+  text-decoration: underline;
+  line-height: 10rpx;
+  
+}

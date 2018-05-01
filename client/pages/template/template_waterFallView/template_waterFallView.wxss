@@ -1,0 +1,28 @@
+/* pages/template/template_waterFallView/template_waterFallView.wxss */
+#books_left{
+  width: 45%;
+  height: auto;
+}
+#books_right{
+  width: 45%;
+  height: auto;
+}
+.book_box{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.book_image{
+  width: 100%;
+}
+.book_introduction{
+  font-size: 30rpx;
+  color: gray;
+}

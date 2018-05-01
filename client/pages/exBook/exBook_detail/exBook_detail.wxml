@@ -1,0 +1,26 @@
+<!--pages/exBook/exBook_detail/exBook_detail.wxml-->
+<import src="../../template/template_comment/template_comment.wxml"/>
+<import src="../../template/template_bookMessage/template_bookMessage.wxml"/>
+<view id='exBook_detail'>
+  <template is="bookMessage"></template>
+  <view id='bookFrom'>
+    <view id='bookFrom_top'>
+      <text>本书来自:</text>
+    </view>
+    <view id='bookFrom_bottom'>
+      <image src='../../img/icon/icon-1.jpg' bindtap='toUser'></image>
+      <view id='bookFrom_bottom_right'>
+        <text>user name</text>
+        <text>Ta想要: 高等数学</text>
+      </view>
+      <view class="exchange-button" bindtap='onToexTap'>
+          <text>与TA交换</text>
+        </view>
+    </view>
+  </view>
+  <view id='bookComment'>
+    <block wx:for="{{articalsArray}}">
+      <template is="comment_piece" data="{{item}}"/>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/template/template_waterFallView/template_waterFallView.wxml-->
+<template name="waterFallView">
+  <view id='books_left'>
+  <block wx:for="{{booksArray}}">
+    <view class='book_box' wx:if="{{index%2==0}}" bindtap='toDetail'>
+      <image class='book_image' src='{{item.image}}' mode='widthFix' ></image>
+      <text class='book_introduction'>{{item.introduction}}</text>
+    </view> 
+  </block>
+</view>
+<view id='books_right'>
+  <block wx:for="{{booksArray}}">
+    <view class='book_box' wx:if="{{index%2==1}}" bindtap='toDetail'>
+      <image class='book_image' src='{{item.image}}' mode='widthFix'></image>
+      <text class='book_introduction'>{{item.introduction}}</text>
+    </view> 
+  </block>
+</view>
+</template>

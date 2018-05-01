@@ -1,0 +1,126 @@
+/* pages/homePage/homePage_swiper_detail/homePage_swiper_detail.wxss */
+@import "../../template/template_comment/template_comment.wxss";
+#homePage_swiper_detail{
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background-color: rgba(230, 233, 232, 0.863);
+}
+#topPart{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+#top{
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+#bookImage{
+  width: 250rpx;
+  height: 350rpx;
+}
+#bookImage image{
+  width: 100%;
+  height: 100%;
+}
+#bookMessage{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  transform: translateY(-60rpx);
+}
+#bookName{
+  font-size: 48rpx;
+  color: #333;
+}
+#bookAuthor{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+#bottom{
+  width: 90%;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: gray;
+}
+#bottom text{
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+}
+#scroll_box{
+  width: 100%;
+  height: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#haver_swiper{
+  width: auto;
+  height: 100%;
+}
+.haver_swiper_item{
+  width: 18vw;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.haver_swiper_item image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+#selectComments{
+  width: 100%;
+  height: auto;
+  margin-bottom: 100rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+#to_favorite{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid rgba(226, 226, 226, 1);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#to_favorite image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 30rpx;
+}
+#to_favorite_input{
+  width: 35%;
+  border-radius: 10rpx;
+  border: 1px solid rgba(226, 226, 226, 1);
+  position: absolute;
+  left: 50rpx;
+}
+.placeholder{
+  font-size: 18rpx;
+}
+.commenter_likecount{
+  margin-left: 290rpx;
+}

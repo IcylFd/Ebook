@@ -1,0 +1,27 @@
+<!--pages/homePage/others_detail/others_detail.wxml-->
+<import src="../../template/template_waterFallView/template_waterFallView.wxml"/>
+<import src="../../template/template_comment/template_comment.wxml"/>
+<view id='others_detail'>
+  <view id='others_message'>
+    <image id='others_image' src='{{others_message.image}}'></image>
+    <text id='others_name'>{{others_message.name}}</text>
+    <view id='sexAdengji'>
+      <image src='{{ others_message.sex == true ? "../../../images/boy.png":"../../../images/girl.png" }}' mode='scaleToFill'></image>
+      <text>Lv.{{others_message.dengji}}</text>
+    </view>
+  </view>
+  <view id='booksAarticals'>
+    <view id='choose_show'>
+      <text class='{{ books ? "extrude" : "normal" }}' bindtap='exchangeTobooks'>books</text>
+      <text class='{{ books ? "normal" : "extrude" }}' bindtap='exchangeToarticals'>articals</text>
+    </view>
+    <view id='show_books' wx:if="{{books}}">
+      <template is="waterFallView" data="{{booksArray}}"/>
+    </view>
+    <view id='show_articals' wx:else>
+      <block wx:for="{{articalsArray}}">
+        <template is="comment_piece" data="{{item}}"/>
+      </block>
+    </view>
+  </view>
+</view>

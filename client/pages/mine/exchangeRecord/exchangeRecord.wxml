@@ -1,0 +1,17 @@
+<!--pages/mine/mine.wxml-->
+<import src="../../template/template_tradingRecord/template_tradingRecord.wxml"/>
+<view id='trading_record'>
+  <view id='tab_control'>
+    <text class='tab_control_part {{tab_position == 0?"checked":""}}' bindtap='choose0'>全部</text>
+    <text class='tab_control_part {{tab_position == 1?"checked":""}}' bindtap='choose1'>换出</text>
+    <text class='tab_control_part {{tab_position == 2?"checked":""}}' bindtap='choose2'>换得</text>
+    <view class='tab_control_border' id='left' wx:if="{{tab_position==0}}"></view>
+    <view class='tab_control_border' id='center' wx:if="{{tab_position==1}}"></view>
+    <view class='tab_control_border' id='right' wx:if="{{tab_position==2}}"></view>
+  </view>
+  <view id='trading_records_container'>
+    <block wx:for="{{arrays}}">
+      <template is="trading_record"></template>
+    </block>
+  </view>
+</view>

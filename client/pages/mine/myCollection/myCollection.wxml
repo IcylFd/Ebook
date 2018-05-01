@@ -1,0 +1,53 @@
+<import src='myCollection-item/myCollection-item-template.wxml' />
+<view class="page">
+  <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? 'c-state1' : ''}}">
+    <view class='main'>
+      <image class="kind-icon" bindtap="tap_ch" src="../../img/myCollection-img/kind.png"></image>
+      <view class='search'>
+         <image src="../../img/search.png"></image> 
+        <input class='searchbox' placeholder='请输入书名' placeholder-style='font-size:30rpx' confirm-type='搜索'></input>
+      </view>
+    </view>
+    <view class="content">
+      <view class="left">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="right">
+        <block wx:for="{{note}}" wx:key="">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="page-bottom {{open ? '' : 'page-bottom-heidden'}}">
+  <view class="classify">
+    <view class="classify-item">
+      <view>已上架</view>
+    </view>
+    <view class="classify-item">
+      <view>未上架</view>
+    </view>
+    <view class='sperate-line'></view>
+    <view class="classify-item">
+      <view>教材</view>
+    </view>
+    <view class="classify-item">
+      <view>小说</view>
+    </view>
+    <view class="classify-item">
+      <view>传记</view>
+    </view>
+    <view class="classify-item">
+      <view>青春文学</view>
+    </view>
+    <view class='sperate-line'></view>
+    <view class="classify-item">
+      <view>文章</view>
+    </view>
+
+  </view>
+
+</view>

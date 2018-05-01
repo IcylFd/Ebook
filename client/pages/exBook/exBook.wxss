@@ -1,0 +1,78 @@
+/* pages/exBook/exBook.wxss */
+@import "../template/template_waterFallView/template_waterFallView.wxss";
+#exBook{
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background-color:  #f5f7f9;
+}
+
+/* 搜索框 */
+#search_box{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search_container{
+  width: 90%;
+  height: 50%;
+  border-radius: 15rpx;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#search_container image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+#search_container input{
+  width: 85%;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+/* 分类导航 */
+#navigation{
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+#classify{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-size: 30rpx;
+  color: gray;
+}
+#classify .checked{
+  color: #98b3d9;
+}
+#pull_down{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 内容展示 */
+#exhibition{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: scroll;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

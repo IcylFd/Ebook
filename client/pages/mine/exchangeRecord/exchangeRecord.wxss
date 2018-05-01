@@ -1,0 +1,57 @@
+/* pages/mine/mine.wxss */
+@import "../../template/template_tradingRecord/template_tradingRecord.wxss";
+#trading_record{
+  background-color: rgba(230, 233, 232, 0.863);
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+}
+#tab_control{
+  width: 100%;
+  height: 8vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tab_control_part{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  font-size: 30rpx;
+  color: gray;
+}
+.checked{
+  color: orange;
+}
+.tab_control_border{
+  width: 20%;
+  border: 1px solid rebeccapurple;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+#left{
+  left: 150rpx;
+}
+#center{
+  left: 300rpx;
+}
+#right{
+  left: 450rpx;
+}
+
+#trading_records_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

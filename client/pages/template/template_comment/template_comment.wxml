@@ -1,0 +1,14 @@
+<!--pages/template/template_comment/template_comment.wxml-->
+<template name="comment_piece">
+  <view class='comment_item'>
+    <view class='comment_item_center'>
+      <text class='comment_title'>{{item.title}}</text>
+      <text class='comment_content'>{{item.content}}</text>
+      <view class='commenter'>
+        <text class='commenter_name'>{{item.name}}</text>
+        <text class='commenter_likecount'>赞 {{item.likecount}}</text>
+        <text class='commenter_commentcount'>评论 {{item.commentcount}}</text>
+      </view>
+    </view>
+  </view>
+</template>

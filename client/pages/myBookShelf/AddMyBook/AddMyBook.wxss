@@ -1,0 +1,58 @@
+
+.msg view{
+  width:150rpx;
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+}
+
+.msg{
+  width: 100%;
+  height: 60rpx;
+  margin-left: 80rpx;
+  margin-top: 50rpx;
+
+}
+
+.input-box {
+  border-bottom: 1rpx solid #ccc;
+  float: left;
+  width: 60%;
+}
+
+.add-img-wrapper {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.add-img {
+  height: 200rpx;
+  width: 150rpx;
+  border: 1rpx solid #ccc;
+  text-align: center;
+  margin: 50rpx;
+}
+
+.add-img-text {
+  color: #ccc;
+  font-size: 28rpx;
+}
+.add-img-text image{
+  width:50rpx;
+  height:50rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.submit {
+  width: 240rpx;
+  height: 80rpx;
+  background-color: #abb1f2;
+  border: none;
+  color: #fff;
+  font-size: 30rpx;
+  display: block;
+  margin-top:100rpx;
+}

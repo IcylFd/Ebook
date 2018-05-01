@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/homePage/homePage",
+    "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
+    "pages/mine/mine",
+    "pages/mine/exchangeRecord/exchangeRecord",  
+    "pages/mine/myCollection/myCollection",
+    "pages/mine/myCollection/toex/toex",
+    "pages/myBookShelf/myBookShelf",
+    "pages/myBookShelf/AddMyBook/AddMyBook",
+    "pages/myBookShelf/myBookDetails/myBookDetails",
+    "pages/exBook/exBook",
+    "pages/exBook/exBook_detail/exBook_detail",
+    
+    "pages/homePage/others_detail/others_detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Ebook",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor":"#6c87ae",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "pages/img/index-img/tabbar-img/index.png",
+        "selectedIconPath": "pages/img/index-img/tabbar-img/index-2.png"
+      },
+      {
+        "pagePath": "pages/exBook/exBook",
+        "text": "换书",
+        "iconPath": "pages/img/index-img/tabbar-img/exchange.png",
+        "selectedIconPath": "pages/img/index-img/tabbar-img/exchange-2.png"
+      },
+      {
+        "pagePath": "pages/myBookShelf/myBookShelf",
+        "text": "书架",
+        "iconPath": "pages/img/index-img/tabbar-img/bookshelf.png",
+        "selectedIconPath": "pages/img/index-img/tabbar-img/bookshelf-2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/img/index-img/tabbar-img/my.png",
+        "selectedIconPath": "pages/img/index-img/tabbar-img/my-2.png"
+      }
+    ]
+  }
+}

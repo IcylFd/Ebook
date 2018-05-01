@@ -1,0 +1,84 @@
+/* pages/mine/toex/toex.wxss */
+@import "../../../template/template_bookMessage/template_bookMessage.wxss";
+#toex{
+  background-color: #f5f7f9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#from{
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#from_text{
+  height: 30%;
+  width: 90%;
+  font-size: 30rpx;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+#message{
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+#message image{
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+#message text{
+  font-size: 30rpx;
+  color: gray;
+  margin-left: 40rpx;
+}
+#exchange-button{
+  border-radius: 25rpx;
+  background-color: #bbc5ef;
+  width:180rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-left:220rpx;
+
+}
+#exchange-button text{
+    color:#fff;
+    font-size: 24rpx;
+    margin: 0;
+}
+#ex_message{
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+  flex: 1;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ex_message_part{
+  width: 90%;
+  height: 10vh;
+  border-bottom: 1px solid #f5f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ex_message_part text{
+  font-size: 30rpx;
+  color: gray;
+}

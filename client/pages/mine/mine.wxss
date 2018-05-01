@@ -1,0 +1,72 @@
+page{
+  background-color: #f5f7f9;
+}
+.top{
+  height:auto;
+  width:100%;
+  background-color: #fff;
+}
+.avator{
+  text-align: center;
+  padding-top: 20rpx;
+}
+.user-icon{
+  width:120rpx;
+  height:120rpx;
+  margin:0 auto;
+  border-radius: 100%;
+}
+.user-name{
+  color: #333;
+  font-size:34rpx;
+  margin-bottom: 10rpx;
+}
+.user-level{
+  margin: 0 auto;
+  width:120rpx;
+  height:auto;
+  font-size: 30rpx;
+  color:#fff;
+  border-radius: 20rpx;
+  background-color: rgba(160,167,241,.5);
+}
+.tabbar{
+  width:100%;
+  height:auto;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  color:#8d8d8d;
+  font-size: 26rpx;
+  padding-top: 40rpx;
+  padding-bottom:40rpx;
+}
+.tabbar-item{
+  flex: 1;
+}
+.tabbar-item image{
+  width:80rpx;
+  height:80rpx;
+}
+.set1,.set2{
+  margin-top:30rpx;
+}
+.set-item{
+  width:100%;
+  height:100rpx;
+  background-color: #fff;
+  border-bottom: 2px solid #f5f7f9;
+  line-height: 100rpx;
+}
+.set-item text{
+  color:#333;
+  font-size: 34rpx;
+  margin-left: 60rpx;
+}
+.set-item image{
+  width:50rpx;
+  height:50rpx;
+  float: right;
+  margin-right: 50rpx;
+  margin-top:25rpx;
+}

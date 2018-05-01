@@ -1,0 +1,5 @@
+<view class='date-container'>
+  <text class='day'>{{day}}</text>
+  <text class='month-year'>{{month}}.{{year}}</text>
+</view>
+<image class='enter-button' src='/pages/img/welcome-img/entrance.png' bindtap='onEntranceTap'></image>
