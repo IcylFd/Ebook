@@ -1,13 +1,14 @@
 {
   "pages": [
-  
     
+    "pages/login/registe/registe",
+    "pages/login/login",
     "pages/index/index",
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
-    "pages/login/login",
-    "pages/login/registe/registe",
+    
+    
     "pages/mine/exchangeRecord/exchangeRecord",
     "pages/mine/myCollection/myCollection",
     "pages/mine/myCollection/toex/toex",
