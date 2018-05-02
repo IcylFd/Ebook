@@ -1,7 +1,7 @@
 <!--pages/mine/toex/toex.wxml-->
 <import src="../../../template/template_bookMessage/template_bookMessage.wxml"/>
 <view id='toex'>
-  <template is="bookMessage"></template>
+  <template is="bookMessage" data="{{buttonLike}}"></template>
   <view id='from'>
     <view id='from_text'>
       <text>本书来自</text>

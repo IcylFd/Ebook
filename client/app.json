@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
@@ -12,7 +13,6 @@
     "pages/myBookShelf/myBookDetails/myBookDetails",
     "pages/exBook/exBook",
     "pages/exBook/exBook_detail/exBook_detail",
-    
     "pages/homePage/others_detail/others_detail"
   ],
   "window": {

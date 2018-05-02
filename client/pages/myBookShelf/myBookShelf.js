@@ -65,6 +65,11 @@ Page({
         console.log(res.result);
       }
     })
+  },
+  todeatail: function(e){
+    wx.navigateTo({
+      url: 'myBookDetails/myBookDetails',
+    })
   }
   
 })

@@ -116,5 +116,10 @@ Page({
     wx.navigateTo({
       url: 'toex/toex',
     })
+  },
+  to_toex: function(e){
+    wx.navigateTo({
+      url: 'toex/toex',
+    })
   }
 })

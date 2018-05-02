@@ -7,6 +7,11 @@ page{
   width:100%;
   background-color: #fff;
 }
+.delete{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 340rpx;
+}
 .title{
   position: absolute;
   top:50rpx;

@@ -10,7 +10,8 @@
         <text>王小波</text>
       </view>
       <view id='bookMessage_right_bottom'>
-        <image src='{{item.button_like}}' bindtap='clickLike' data-index='{{index}}' data-src='{{item.button_like}}'></image>
+        <image src='{{buttonLike}}' bindtap='clickLike'></image>
+        {{a}}
       </view>
     </view>
   </view>

@@ -1,9 +1,9 @@
 <template name="item">
   <view class='container'>
     <view class="item">
-      <navigator url=''><image class="item-img" src="{{url}}" mode="widthFix"></image></navigator>
+      <view bindtap='to_toex'><image class="item-img" src="{{url}}" mode="widthFix"></image></view>
       <view class="item-title-box">
-        <navigator url="url" class="item-title">{{title}}</navigator>
+        <view class='item-title'>{{title}}</view>
       </view>
       <view class="name">
         <image class="item-ava" src="{{avatar}}"></image>
