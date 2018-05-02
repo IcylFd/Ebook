@@ -41,7 +41,7 @@ Page({
 
   onToexTap: function (event) {
     wx.navigateTo({
-      url: '../mine/myCollection/toex/toex',
+      url: '../../mine/myCollection/toex/toex',
     })
   }
 })
