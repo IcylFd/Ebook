@@ -1,0 +1,41 @@
+/* pages/login/login.wxss */
+#login{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("http://b287.photo.store.qq.com/psb?/V14I09Sc123RDV/n3qv.IP.8LEUb14uYBs334yFGcpAm7Llt20k0L5pQHo!/b/dB8BAAAAAAAA&bo=dwGbAncBmwIRECc!&rf=viewer_311");
+}
+#input_container{
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#input_container input{
+  width: 90%;
+  height: 80rpx;
+  border-bottom: 1px solid gray;
+  font-size: 30rpx;
+  text-align: center;
+}
+#zhuce{
+  font-size: 25rpx;
+  width: 80%;
+  height: 60rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: green;
+}
+.sumbit_button{
+  width: 60%;
+  height: 80rpx;
+  margin-bottom: 120rpx;
+  border: none;
+  color: gray;
+}

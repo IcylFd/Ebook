@@ -25,7 +25,8 @@ Page({
         likecount: "26",
         commentcount: "261"
       }
-    ]
+    ],
+    buttonLike: "../../../images/like.png"
   },
   toUser: function(e){
     wx.navigateTo({
@@ -41,7 +42,7 @@ Page({
 
   onToexTap: function (event) {
     wx.navigateTo({
-      url: '../mine/myCollection/toex/toex',
+      url: '../../mine/myCollection/toex/toex',
     })
   }
 })

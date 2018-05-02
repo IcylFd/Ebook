@@ -60,6 +60,11 @@ Page({
       }
     ]
   },
+  toDetail:function(e){
+    wx.navigateTo({
+      url: '../../exBook/exBook_detail/exBook_detail',
+    })
+  },
   exchangeTobooks: function(e){
     this.setData({
       books: true

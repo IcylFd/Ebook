@@ -1,0 +1,26 @@
+<!--pages/login/registe/registe.wxml-->
+<view id='register'>
+  <view class='rows'>
+    <label>用户名:</label>
+    <input type='text'></input>
+  </view>
+  <view class='rows'>
+    <label>邮箱:</label>
+    <input type='text'></input>
+  </view>
+  <view class='rows'>
+    <label>密码:</label>
+    <input type='text' password='true'></input>
+  </view>
+  <view class='rows'>
+    <label>确认密码:</label>
+    <input type='text' password='true'></input>
+  </view>
+  <view class='rows'>
+    <label>微信号:</label>
+    <input type='text' password='true'></input>
+  </view>
+  <view id='button'>
+    <button>立即注册</button>
+  </view>
+</view>
