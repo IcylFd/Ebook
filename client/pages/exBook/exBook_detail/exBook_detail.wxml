@@ -8,7 +8,7 @@
       <text>本书来自:</text>
     </view>
     <view id='bookFrom_bottom'>
-      <image src='../../img/icon/icon-1.jpg' bindtap='toUser'></image>
+      <view class='avator'><image src='../../img/icon/icon-1.jpg' bindtap='toUser'></image></view>
       <view id='bookFrom_bottom_right'>
         <text>user name</text>
         <text>Ta想要: 高等数学</text>

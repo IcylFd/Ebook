@@ -1,8 +1,8 @@
 {
   "pages": [
-    
-    "pages/index/index",
     "pages/homePage/homePage",
+    "pages/index/index",
+    
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
     "pages/mine/exchangeRecord/exchangeRecord",  

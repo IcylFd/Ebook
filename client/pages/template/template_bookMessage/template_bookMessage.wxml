@@ -1,7 +1,7 @@
 <!--pages/template/template_bookMessage/template_bookMessage.wxml-->
 <template name="bookMessage">
   <view id='bookMessage'>
-    <image id='bookMessage_left' src='../../../img/books/book1.jpg' mode='scaleToFill'></image>
+    <image id='bookMessage_left' src='https://img3.doubanio.com/view/subject/l/public/s3917731.jpg' mode='scaleToFill'></image>
     <view id='bookMessage_right'>
       <view id='bookMessage_right_top'>
         <text>老人与海</text>
