@@ -2,22 +2,22 @@
 <template name="trading_record">
   <view class='trading_record_li'>
     <view class='li_top'>
-      <image src='../../images/my.png' mode='scaleToFill'></image>
+      <image src='../../img/icon/icon-1.jpg' mode='scaleToFill'></image>
       <text>item.name</text>
     </view>
     <view class='li_center'>
-      <image src='../../images/back_1.jpg' mode='scaleToFill' class='li_center_left'></image>
+      <image src='../../img/books/book3.jpg' mode='scaleToFill' class='li_center_left'></image>
       <view class='li_center_right'>
         <view class='right_part'>
-          <image src='../../images/circle.png' mode='scaleToFill'></image>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
           <text>item.bookName</text>
         </view>
         <view class='right_part'>
-          <image src='../../images/position.png' mode='scaleToFill'></image>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
           <text>item.position</text>
         </view>
         <view class='right_part'>
-          <image src='../../images/circle.png' mode='scaleToFill'></image>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
           <text>item.useName</text>
         </view>
       </view>

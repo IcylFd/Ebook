@@ -14,7 +14,7 @@
     <block wx:for='{{books_key}}' wx:for-item="item" wx:key="">
       <!-- <navigator url='{{index==0?"AddMyBook/AddMyBook":"myBookDetails/myBookDetails"}}'> -->
       <view bindtap='scanCode'>
-      <image wx:if="{{index==0}}" src='../img/bookshelf-img/plus.png' class='plus'></image>
+      <image wx:if="{{index==0}}？O" src='../img/bookshelf-img/plus.png' class='plus'></image>
         <image class='book-img' src='{{item.img}}'></image>
       </view>
       <!-- </navigator> -->
