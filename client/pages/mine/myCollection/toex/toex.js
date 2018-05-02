@@ -29,9 +29,5 @@ Page({
     //   })
     // }
   },
-  onToexTap: function(e){
-    wx.navigateTo({
-      url: '../../../exBook/exBook_detail/exBook_detail',
-    })
-  }
+  
 })

@@ -25,7 +25,8 @@ Page({
         likecount: "26",
         commentcount: "261"
       }
-    ]
+    ],
+    buttonLike: "../../../images/like.png"
   },
   toUser: function(e){
     wx.navigateTo({

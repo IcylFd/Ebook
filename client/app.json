@@ -1,11 +1,14 @@
 {
   "pages": [
-    "pages/homePage/homePage",
-    "pages/index/index",
+  
     
+    "pages/index/index",
+    "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
-    "pages/mine/exchangeRecord/exchangeRecord",  
+    "pages/login/login",
+    "pages/login/registe/registe",
+    "pages/mine/exchangeRecord/exchangeRecord",
     "pages/mine/myCollection/myCollection",
     "pages/mine/myCollection/toex/toex",
     "pages/myBookShelf/myBookShelf",
@@ -14,6 +17,7 @@
     "pages/exBook/exBook",
     "pages/exBook/exBook_detail/exBook_detail",
     "pages/homePage/others_detail/others_detail"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +27,7 @@
   },
   "tabBar": {
     "color": "#707070",
-    "selectedColor":"#6c87ae",
+    "selectedColor": "#6c87ae",
     "list": [
       {
         "pagePath": "pages/homePage/homePage",

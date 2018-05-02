@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view id='login'>
+  <view id='input_container'>
+    <input type='number' placeholder='请输入用户名'></input>
+    <input type='text' password='true' placeholder='请输入密码'></input>
+  </view>
+  <view id='zhuce'>
+    <text>立即注册</text>
+  </view>
+  <button class='sumbit_button'>登陆</button>
+</view>
