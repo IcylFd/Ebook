@@ -1,5 +1,6 @@
 // pages/homePage/homePage.js
 var postdata = require("../../data/books_data.js");
+var app = getApp();
 Page({
 
   /**
@@ -10,32 +11,15 @@ Page({
     swiper_type: true,
     bottom_border_left: "bottom_border_left",
     bottom_border_right: "bottom_border_right",
-    
     book_message_array : "",
     back_array: "" ,
-    user_array: ""
+    user_array: "",
+    my_:""
   },
   toOthers_detail:function(e){
     wx.navigateTo({
       url: './others_detail/others_detail',
     })
-  },
-  // 添加收藏
-  clickLike: function (event){
-    var index = event.currentTarget.dataset.index;
-    var key_like = "array[" + index + "].like";
-    var key_button_like = "array[" + index + "].button_like";
-    if (event.currentTarget.dataset.src == "../../images/like.png"){
-      this.setData({
-        [key_like]: true,
-        [key_button_like]: "../../images/like1.png"
-      })
-    }else{
-      this.setData({
-        [key_like]: false,
-        [key_button_like]: "../../images/like.png"
-      })
-    }
   },
   // 轮播图滑动
   bindchange: function (e){
@@ -45,10 +29,11 @@ Page({
   },
   // 滑块点击显示书籍详情
   swiper_navigate: function(e){
+    console.log(e);
     var like = e.currentTarget.dataset.like;
     var that = this;
     wx.navigateTo({
-      url: './homePage_swiper_detail/homePage_swiper_detail'
+      url: './homePage_swiper_detail/homePage_swiper_detail?bookid='+e.currentTarget.dataset.bookid
     })
   },
   //点击切换轮播图展示的类别
@@ -62,64 +47,99 @@ Page({
       swiper_type: false
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  
   
   onLoad: function(e){
     this.setData({
-      book_message_array: postdata.postlist.book_message_array,
       back_array: postdata.postlist.back_array,
-      user_array: postdata.postlist.user_array,
-      havedBook_message_array: postdata.postlist.havedBook_message_array
+      havedBook_message_array: app.globalData.havedBook_message_array,
+      user_array: app.globalData.user_array,
+      book_message_array: app.globalData.book_message_array,
+      my_: app.globalData.my_
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    console.log(postdata.postlist.back_array);
+// 判断全部书籍中的书是否在我的收藏里
+  matchBook: function(){
+    if(this.data.swiper_type){
+      var book_message_array = this.data.book_message_array;
+      var that = this;
+      for (var i = 0; i < book_message_array.length; i++) {
+        if (that.book_on_my_collection(book_message_array[i].bookID) == true) {
+          var path = 'book_message_array[' + i + '].onMyCollection';
+          this.setData({
+            [path]: true
+          })
+        }
+      }
+    }else{
+      var havedBook_message_array = this.data.havedBook_message_array;
+      var that = this;
+      for (var i = 0; i < havedBook_message_array.length; i++) {
+        if (that.book_on_my_collection(havedBook_message_array[i].bookID) == true) {
+          var path = 'havedBook_message_array[' + i + '].onMyCollection';
+          this.setData({
+            [path]: true
+          })
+        }
+      }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  book_on_my_collection: function(bookId){
+    var my_ = this.data.my_;
+    for (var i = 0; i < my_.userCollection.length;i++){
+      if (bookId == my_.userCollection[i]){
+        return true;
+      }
+    }
+    return false;
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
+// 添加收藏
+  clickLike: function (event) {
+    var my_ = this.data.my_;
+    var bookid = event.currentTarget.dataset.bookid;
+    var index = event.currentTarget.dataset.index;
+    var onMyCollection = event.currentTarget.dataset.onmycollection;
+    if (onMyCollection==true){
+      for (var i = 0; i < my_.userCollection.length; i++) {
+        if (bookid == my_.userCollection[i]) {
+          my_.userCollection.splice(i,1);
+          this.setData({
+            my_: my_
+          });
+          console.log("e");
+          if(this.data.swiper_type == true){
+            var path = 'book_message_array[' + index + '].onMyCollection';
+            this.setData({
+              [path]: false
+            })
+          }else{
+            
+            var path = 'havedBook_message_array[' + index + '].onMyCollection';
+            this.setData({
+              [path]: false
+            })
+          }
+        }
+      }
+    }else{
+      my_.userCollection.push(bookid);
+      this.setData({
+        my_: my_
+      })
+      if (this.data.swiper_type == true) {
+        var path = 'book_message_array[' + index + '].onMyCollection';
+        this.setData({
+          [path]: true
+        })
+      } else {
+        var path = 'havedBook_message_array[' + index + '].onMyCollection';
+        this.setData({
+          [path]: true
+        })
+      }
+    }
+    
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
   
-  },
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })
