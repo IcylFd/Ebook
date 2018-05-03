@@ -216,105 +216,209 @@ var local_database = {
     {
       userId: "0",
       userImage: "http://img.zcool.cn/community/016b3756ea1b1a32f875520fc0224b.jpg@900w_1l_2o_100sh.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "48",
+      userName: "Benny",
+      userSex: 0,
       userCollection: [
 
       ],
-      userMessage: {
-
-      }
-    }, {
+      userShelf:[{
+        bookId:"2",
+        want:"高等数学A1"
+      },
+        {
+          bookId: "12",
+          want: "目送"
+        },
+        {
+          bookId:"3",
+          want:"三体"
+        },
+        {
+          bookId:"9",
+          want:"线性代数"
+        }
+      ]
+    }, 
+    {
       userId: "1",
       userImage: "http://img63.nipic.com/file/20150416/20852081_222349129000_1.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "47",
+      userName: "Jeff",
+      userSex:0,
       userCollection: [
 
       ],
-      userMessage: {
-
+      userShelf: [{
+        bookId: "4",
+        want: "高等数学A1"
+      },
+      {
+        bookId: "16",
+        want: "我在未来等你"
+      },
+      {
+        bookId: "8",
+        want: "乔布斯传"
+      },
+      {
+        bookId: "7",
+        want: "线性代数"
       }
-    }, {
+      ]
+    }, 
+    {
       userId: "2",
       userImage: "http://img.zcool.cn/community/016fdd5819a73fa84a0e282be9a3a1.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "45",
+      userName: "Mandy",
+      userSex: 1,
       userCollection: [
 
       ],
-      userMessage: {
-
+      userShelf: [{
+        bookId: "4",
+        want: "高等数学A1"
+      },
+      {
+        bookId: "1",
+        want: "目送"
+      },
+      {
+        bookId: "11",
+        want: "三体"
       }
-    }, {
+      ]
+    },
+     {
       userId: "3",
-      userImage: "http://img.zcool.cn/community/01a1b75819a73fa84a0e282bc24651.jpg",
-      userGrade: "",
-      userName: "",
+      userImage: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525357435590&di=f8da9523ea61145ffc0c69badc73c30e&imgtype=0&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201505%2F19%2F20150519164325_waMtC.jpeg",
+      userLevel: "44",
+      userName: "王晓明",
+      userSex: 0,
       userCollection: [
 
       ],
-      userMessage: {
-
+      userShelf: [
+      {
+        bookId: "3",
+        want: "三体"
+      },
+      {
+        bookId: "9",
+        want: "线性代数"
       }
+      ]
     }, {
       userId: "4",
-      userImage: "http://img0w.pconline.com.cn/pconline/1403/29/spcgroup/width_640,,qua_30/4523636_04.jpg",
-      userGrade: "",
-      userName: "",
+      userImage: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525952043&di=2e1fc1d71ec82df9540fa8e4a0a0d962&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201507%2F28%2F20150728203023_MGVc2.jpeg",
+      userLevel: "44",
+      userName: "Terry",
+      userSex: 1,
       userCollection: [
 
       ],
-      userMessage: {
-
+      userShelf: [{
+        bookId: "17",
+        want: "概率论"
+      },
+      {
+        bookId: "6",
+        want: "经济学原理"
       }
+      ]
     }, {
       userId: "5",
       userImage: "http://www.touxiang.cn/uploads/20131012/12-054249_479.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "40",
+      userName: "小黄鸭",
+      userSex: 1,
       userCollection: [
 
       ],
-      userMessage: {
-
-      }
-    }, {
+    userShelf: [{
+      bookId: "17",
+      want: "概率论"
+    },
+    {
+      bookId: "6",
+      want: "经济学原理"
+    }]
+    },
+   {
       userId: "6",
       userImage: "http://www.qqzhi.com/uploadpic/2015-01-14/204348907.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "39",
+      userName: "Alex",
+      userSex: 0,
       userCollection: [
 
       ],
-      userMessage: {
-
-      }
-    }, {
+      userShelf: [{
+        bookId: "17",
+        want: "概率论"
+      },
+      {
+        bookId: "6",
+        want: "经济学原理"
+      }]
+    }, 
+    {
       userId: "7",
-      userImage: "http://pic.58pic.com/58pic/16/83/97/18258PIC9Jv_1024.jpg",
-      userGrade: "",
-      userName: "",
+      userImage: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525357325590&di=8ec0f42b89c71afe0458fe91cf1a969f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201507%2F15%2F20150715110531_jEnyA.jpeg",
+      userLevel: "39",
+      userName: "Helen",
+      userSex: 1,
       userCollection: [
 
       ],
-      userMessage: {
-
-      }
-    }, {
+      userShelf: [{
+        bookId: "17",
+        want: "概率论"
+      },
+      {
+        bookId: "6",
+        want: "经济学原理"
+      }]
+    }, 
+    {
       userId: "8",
       userImage: "http://img03.tooopen.com/uploadfile/Downs/images/2012/2/24/sy_20120224133241944132.jpg",
-      userGrade: "",
-      userName: "",
+      userLevel: "38",
+      userName: "Sam",
+      userSex: 0,
       userCollection: [
 
       ],
-      userMessage: {
+      userShelf: [{
+        bookId: "17",
+        want: "概率论"
+      },
+      {
+        bookId: "6",
+        want: "经济学原理"
+      }]
+    },
+    {
+      userId: "9",
+      userImage: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525357406482&di=f2f20cbdcc232347c0c384b202b1a6ba&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201508%2F19%2F20150819113840_8TUGR.jpeg",
+      userLevel: "20",
+      userName: "Amy",
+      userSex: 1,
+      userCollection: [
 
-      }
+      ],
+      userShelf: [{
+        bookId: "17",
+        want: "概率论"
+      },
+      {
+        bookId: "6",
+        want: "经济学原理"
+      }]
     }
   ],
-  
+
   havedBook_message_array: [
     {
       bookName: "粉墨",
@@ -389,9 +493,9 @@ var local_database = {
   my_: {
     userId: "0",
     userImage: "http://img.zcool.cn/community/016b3756ea1b1a32f875520fc0224b.jpg@900w_1l_2o_100sh.jpg",
-    userGrade: "",
+    userLevel: "",
     userName: "",
-    userCollection: [],
+    userCollection: ["0","2","5"],
     userMessage: {
 
     }

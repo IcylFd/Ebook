@@ -6,7 +6,7 @@
         <block wx:for="{{user_array}}">
           <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
             <image src='{{item.userImage}}' mode='scaleToFill'></image>
-            <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
+            <text class='rank_list_swiper_item_lv'>Lv.{{item.userLevel}}</text>
           </swiper-item>
         </block>
       </swiper>
