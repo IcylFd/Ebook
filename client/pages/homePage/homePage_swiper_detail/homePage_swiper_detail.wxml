@@ -31,7 +31,7 @@
   </scroll-view>
   <view id='to_favorite'>
     <input id='to_favorite_input' placeholder='输入您的评论..' placeholder-class="placeholder" bindfocus="input_focus"></input>
-    <image src='../../../images/like.png' ></image>
+    <image src='../../../images/like.png'  ></image>
     <image src='../../../images/discuss.png' ></image>
     <image src='../../../images/share.png' ></image>
   </view>

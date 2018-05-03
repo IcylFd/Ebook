@@ -29,11 +29,11 @@
       <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
         <swiper-item class="swiper_item">
           <view class='swiper_item_content'>
-            <view class='content_bookMessage' bindtap="swiper_navigate" data-like="{{item.like}}">
+            <view class='content_bookMessage' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
               <image src='{{item.bookImage}}' mode='scaleToFill'></image>
               <text>{{item.bookName}}</text>
             </view>
-            <view class='content_bookintroduce' bindtap="swiper_navigate" data-like="{{item.like}}">
+            <view class='content_bookintroduce' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
               <text space='emsp'>  {{item.bookSummary}}</text>
             </view>
             <view class='content_button'>

@@ -1,5 +1,6 @@
 // pages/homePage/homePage.js
 var postdata = require("../../data/books_data.js");
+var app = getApp();
 Page({
 
   /**
@@ -28,10 +29,11 @@ Page({
   },
   // 滑块点击显示书籍详情
   swiper_navigate: function(e){
+    console.log(e);
     var like = e.currentTarget.dataset.like;
     var that = this;
     wx.navigateTo({
-      url: './homePage_swiper_detail/homePage_swiper_detail'
+      url: './homePage_swiper_detail/homePage_swiper_detail?bookid='+e.currentTarget.dataset.bookid
     })
   },
   //点击切换轮播图展示的类别
@@ -49,11 +51,11 @@ Page({
   
   onLoad: function(e){
     this.setData({
-      book_message_array: postdata.postlist.book_message_array,
       back_array: postdata.postlist.back_array,
-      user_array: postdata.postlist.user_array,
-      havedBook_message_array: postdata.postlist.havedBook_message_array,
-      my_: postdata.postlist.my_
+      havedBook_message_array: app.globalData.havedBook_message_array,
+      user_array: app.globalData.user_array,
+      book_message_array: app.globalData.book_message_array,
+      my_: app.globalData.my_
     })
   },
 
