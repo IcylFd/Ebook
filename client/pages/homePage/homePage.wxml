@@ -3,9 +3,9 @@
   <view id='topPart'>
    <text id='rank_list_text'>今日排行</text>
     <swiper id='rank_list_swiper' display-multiple-items="5">
-      <block wx:for="{{rank_list_array}}">
+      <block wx:for="{{user_array}}">
         <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
-          <image src='{{item.rankImage}}' mode='scaleToFill'></image>
+          <image src='{{item.userImage}}' mode='scaleToFill'></image>
           <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
         </swiper-item>
       </block>
@@ -26,18 +26,18 @@
       </block>
     </swiper>
     <swiper id='homePage_swiper' circular='true' previous-margin='140rpx' next-margin='140rpx'current="{{index}}" bindchange='bindchange'>
-      <block wx:for="{{swiper_type?array:array_two}}">
+      <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
         <swiper-item class="swiper_item">
           <view class='swiper_item_content'>
-            <view class='content_bookMessage' bindtap="swiper_navigate" data-like="{{item.like}}">
+            <view class='content_bookMessage' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
               <image src='{{item.bookImage}}' mode='scaleToFill'></image>
               <text>{{item.bookName}}</text>
             </view>
-            <view class='content_bookintroduce' bindtap="swiper_navigate" data-like="{{item.like}}">
-              <text space='emsp'>  {{item.bookIntroduce}}</text>
+            <view class='content_bookintroduce' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
+              <text space='emsp'>  {{item.bookSummary}}</text>
             </view>
             <view class='content_button'>
-              <image src='{{item.button_like}}' bindtap='clickLike' data-index='{{index}}' data-src='{{item.button_like}}'></image>
+              <image src='{{ item.onMyCollection ? "../../images/like1.png" :"../../images/like.png" }}' bindtap='clickLike' bindload='matchBook' data-booKID="{{item.bookID}}" data-index='{{index}}' data-onMyCollection='{{item.onMyCollection}}' ></image>
               <image src='../../images/share.png'></image>
             </view>
           </view>

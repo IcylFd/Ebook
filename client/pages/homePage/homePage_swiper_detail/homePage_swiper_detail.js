@@ -50,5 +50,8 @@ image:"http://img.zcool.cn/community/016b3756ea1b1a32f875520fc0224b.jpg@900w_1l_
     wx.navigateTo({
       url: '../../mine/myCollection/toex/toex',
     })
+  },
+  onLoad: function(option){
+    console.log(option);
   }
 })

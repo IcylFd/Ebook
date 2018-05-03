@@ -7,12 +7,36 @@ Page({
   data: {
   
   },
+  userName: function(e){
+    this.setData({
+      userName : e.detail.value
+    })
+  },
+  userPassword: function(e){
+    this.setData({
+      userPassword: e.detail.value
+    })
+  },
+  Log: function(e){
+    var that = this;
+    wx.request({
+      url: 'https://xmbhmxfp.qcloud.la/Welcome',
+      method: "POST",
+      data: {
+        username: that.userName,
+        pwd: that.userPassword
+      },
+      success: function(e){
+        console.log(e);
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**

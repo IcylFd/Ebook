@@ -2,7 +2,7 @@
 <view id='register'>
   <view class='rows'>
     <label>用户名:</label>
-    <input type='text'></input>
+    <input type='text' bindinput='userName'></input>
   </view>
   <view class='rows'>
     <label>邮箱:</label>
@@ -10,7 +10,7 @@
   </view>
   <view class='rows'>
     <label>密码:</label>
-    <input type='text' password='true'></input>
+    <input type='text' password='true' bindinput='userPassword'></input>
   </view>
   <view class='rows'>
     <label>确认密码:</label>
@@ -21,6 +21,6 @@
     <input type='text' password='true'></input>
   </view>
   <view id='button'>
-    <button>立即注册</button>
+    <button bindtap='Log'>立即注册</button>
   </view>
 </view>

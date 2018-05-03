@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("http://b287.photo.store.qq.com/psb?/V14I09Sc123RDV/n3qv.IP.8LEUb14uYBs334yFGcpAm7Llt20k0L5pQHo!/b/dB8BAAAAAAAA&bo=dwGbAncBmwIRECc!&rf=viewer_311");
+  background-image: url("https://wx2.sinaimg.cn/mw690/6c465004gy1fqx996gev4j20af0ij75q.jpg");
 }
 #input_container{
   width: 90%;
