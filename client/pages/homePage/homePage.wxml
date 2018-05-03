@@ -34,7 +34,7 @@
               <text>{{item.bookName}}</text>
             </view>
             <view class='content_bookintroduce' bindtap="swiper_navigate" data-like="{{item.like}}">
-              <text space='emsp'>  {{item.bookIntroduce}}</text>
+              <text space='emsp'>  {{item.bookSummary}}</text>
             </view>
             <view class='content_button'>
               <image src='{{item.button_like}}' bindtap='clickLike' data-index='{{index}}' data-src='{{item.button_like}}'></image>

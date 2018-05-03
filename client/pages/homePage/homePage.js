@@ -1,4 +1,5 @@
 // pages/homePage/homePage.js
+var postdata = require("../../data/books_data.js");
 Page({
 
   /**
@@ -39,37 +40,8 @@ Page({
         Lv: 24
       }
     ],
-    array : [{
-      bookName: "了比起的盖茨比",
-      bookImage: "http://p5.qhimg.com/t01cb6ab8b8a8ea0609.jpg",
-      bookIntroduce: "《了不起的盖茨比》是美国作家弗·司各特·菲茨杰拉德创作的一部以以20世纪20年代的纽约市及长岛为背景的中篇小说，出版于1925年。《了不起的盖茨比》是美国作家弗·司各特·菲茨杰拉德创作的一部以以20世纪20年代的纽约市及长岛为背景的中篇小说，出版于1925年。",
-      button_like: "../../images/like.png",
-      like: false
-    },
-    {
-      bookName: "泰坦尼克号",
-      bookImage: "http://ent.southcn.com/8/images/attachement/jpg/site4/20120406/40/12979295661820977888.jpg",
-      bookIntroduce: "《泰坦尼克号》是美国二十世纪福斯电影公司、派拉蒙影业公司出品爱情片，由詹姆斯·卡梅隆执导，莱昂纳多·迪卡普里奥、凯特·温斯莱特领衔主演。影片以1912年泰坦尼克号邮轮在其处女启航时触礁冰山而沉没的事件为背景，讲述了处于不同阶层的两个人穷画家杰克和贵族女露丝抛弃世俗的偏见坠入爱河，最终杰克把生命的机会让给了露丝的感人故事。该片于1997年12月19日在美国上映，1998年4月3日在中国在内地上映，2012年4月10日以3D版在中国内地重映。",
-      button_like: "../../images/like.png",
-      like: false
-    },
-    {
-      bookName: "肖申克的救赎",
-      bookImage: "http://news.youth.cn/jsxw/201612/W020161201735193768507.jpg",
-      bookIntroduce: "《肖申克的救赎》（The Shawshank Redemption）取自斯蒂芬·金《不同的季节》中收录的《丽塔·海华丝及萧山克监狱的救赎》而改编成的《肖申克的救赎》剧本，并由弗兰克·达拉邦特执导，蒂姆·罗宾斯、摩根·弗里曼等主演。影片中涵盖全片的主题是“希望”，全片透过监狱这一强制剥夺自由、高度强调纪律的特殊背景来展现作为个体的人对“时间流逝、环境改造”的恐惧。影片的结局有《基督山伯爵》式的复仇宣泄。",
-      button_like: "../../images/like.png",
-      like: false
-    }
-    ],
-    back_array: [
-      {
-        src: "../../images/back_1.jpg"
-      },{
-        src: "../../images/back_2.jpg"
-      },{
-        src: "../../images/back_3.jpg"
-      }
-    ]
+    array : postdata.postlist.book_message_array,
+    back_array: postdata.postlist.back_array
   },
   toOthers_detail:function(e){
     wx.navigateTo({
@@ -127,7 +99,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    console.log(postdata.postlist.back_array);
   },
 
   /**
