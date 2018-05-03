@@ -27,7 +27,7 @@
       </swiper>
       <swiper id='homePage_swiper' circular='true' previous-margin='140rpx' next-margin='140rpx'current="{{index}}" bindchange='bindchange'>
         <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
-          <swiper-item class="swiper_item">
+          <swiper-item class="swiper_item" wx:if="{{index<6}}">
             <view class='swiper_item_content'>
               <view class='content_bookMessage' bindtap="swiper_navigate" data-bookid='{{item.bookID}}' data-onMyCollection='{{item.onMyCollection}}' data-bookname='{{bookName}}' data-bookImage='{{item.bookImage}}' data-bookAuthor='{{item.bookAuthor}}'>
                 <image src='{{item.bookImage}}' mode='scaleToFill'></image>

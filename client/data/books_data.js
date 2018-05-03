@@ -220,10 +220,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "1",
       userImage: "http://img63.nipic.com/file/20150416/20852081_222349129000_1.jpg",
@@ -231,10 +228,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "2",
       userImage: "http://img.zcool.cn/community/016fdd5819a73fa84a0e282be9a3a1.jpg",
@@ -242,10 +236,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "3",
       userImage: "http://img.zcool.cn/community/01a1b75819a73fa84a0e282bc24651.jpg",
@@ -253,10 +244,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "4",
       userImage: "http://img0w.pconline.com.cn/pconline/1403/29/spcgroup/width_640,,qua_30/4523636_04.jpg",
@@ -264,10 +252,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "5",
       userImage: "http://www.touxiang.cn/uploads/20131012/12-054249_479.jpg",
@@ -275,10 +260,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "6",
       userImage: "http://www.qqzhi.com/uploadpic/2015-01-14/204348907.jpg",
@@ -286,10 +268,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "7",
       userImage: "http://pic.58pic.com/58pic/16/83/97/18258PIC9Jv_1024.jpg",
@@ -297,10 +276,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }, {
       userId: "8",
       userImage: "http://img03.tooopen.com/uploadfile/Downs/images/2012/2/24/sy_20120224133241944132.jpg",
@@ -308,10 +284,7 @@ var local_database = {
       userName: "",
       userCollection: [
 
-      ],
-      userMessage: {
-
-      }
+      ]
     }
   ],
   
@@ -391,10 +364,7 @@ var local_database = {
     userImage: "http://img.zcool.cn/community/016b3756ea1b1a32f875520fc0224b.jpg@900w_1l_2o_100sh.jpg",
     userGrade: "",
     userName: "",
-    userCollection: [],
-    userMessage: {
-
-    }
+    userCollection: ['0','3','8'],
   }
 }
 

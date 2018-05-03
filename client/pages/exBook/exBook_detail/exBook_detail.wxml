@@ -2,7 +2,7 @@
 <import src="../../template/template_comment/template_comment.wxml"/>
 <import src="../../template/template_bookMessage/template_bookMessage.wxml"/>
 <view id='exBook_detail'>
-  <template is="bookMessage" data="{{buttonLike}}"></template>
+  <template is="bookMessage" data="{{...book_message}}"></template>
   <view id='bookFrom'>
     <view id='bookFrom_top'>
       <text>本书来自:</text>

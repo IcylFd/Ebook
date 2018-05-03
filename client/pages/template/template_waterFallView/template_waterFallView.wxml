@@ -2,17 +2,17 @@
 <template name="waterFallView">
   <view id='books_left'>
   <block wx:for="{{booksArray}}">
-    <view class='book_box' wx:if="{{index%2==0}}" bindtap='toDetail'>
-      <image class='book_image' src='{{item.image}}' mode='widthFix' ></image>
-      <text class='book_introduction'>{{item.introduction}}</text>
+    <view class='book_box' wx:if="{{index%2==0}}" bindtap='toDetail' data-bookid='{{item.bookID}}' data-bookimage='{{item.bookImage}}' data-bookname='{{item.bookName}}' data-bookauthor='{{item.bookAuthor}}' data-onmycollection='{{item.onMyCollection}}' >
+      <image class='book_image' src='{{item.bookImage}}' mode='widthFix' ></image>
+      <text class='book_introduction'>{{item.bookName}}</text>
     </view> 
   </block>
 </view>
 <view id='books_right'>
   <block wx:for="{{booksArray}}">
-    <view class='book_box' wx:if="{{index%2==1}}" bindtap='toDetail'>
-      <image class='book_image' src='{{item.image}}' mode='widthFix'></image>
-      <text class='book_introduction'>{{item.introduction}}</text>
+    <view class='book_box' wx:if="{{index%2==1}}" bindtap='toDetail' data-bookid='{{item.bookID}}' data-bookimage='{{item.bookImage}}' data-bookname='{{item.bookName}}' data-bookauthor='{{item.bookAuthor}}' data-onmycollection='{{item.onMyCollection}}'>
+      <image class='book_image' src='{{item.bookImage}}' mode='widthFix'></image>
+      <text class='book_introduction'>{{item.bookName}}</text>
     </view> 
   </block>
 </view>

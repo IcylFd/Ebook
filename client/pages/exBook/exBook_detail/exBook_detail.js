@@ -25,8 +25,7 @@ Page({
         likecount: "26",
         commentcount: "261"
       }
-    ],
-    buttonLike: "../../../images/like.png"
+    ]
   },
   toUser: function(e){
     wx.navigateTo({
@@ -37,7 +36,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log(options);
+    var book_message = {
+      bookid: options.bookid,
+      bookname: options.bookname,
+      bookauthor: options.bookauthor,
+      bookimage: options.bookimage,
+      onmycollection: options.onmycollection
+    }
+    this.setData({
+      book_message: book_message
+    })
   },
 
   onToexTap: function (event) {
