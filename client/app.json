@@ -7,8 +7,6 @@
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
-    
-    
     "pages/mine/exchangeRecord/exchangeRecord",
    "pages/mine/myCollection/myCollection",
     "pages/mine/myCollection/toex/toex",
