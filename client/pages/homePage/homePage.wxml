@@ -1,48 +1,49 @@
 <!--pages/homePage/homePage.wxml-->
 <view id='homePage'>
-  <view id='topPart'>
-   <text id='rank_list_text'>今日排行</text>
-    <swiper id='rank_list_swiper' display-multiple-items="5">
-      <block wx:for="{{user_array}}">
-        <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
-          <image src='{{item.userImage}}' mode='scaleToFill'></image>
-          <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
-  <view id='bottomPart_select'>
-    <text id='have' bindtap='choose_swiper1'>全部</text>
-    <text id='not_have' bindtap='choose_swiper2'>已有书籍</text>
-    <view id='{{swiper_type ? bottom_border_left : bottom_border_right}}'></view>
-  </view>
-  <view id='bottomPart'>
-    <view id='homePage_backswiper_maxk'></view>
-    <swiper id='homePage_backswiper' circular='true' current="{{index}}" duration='0'>
-      <block wx:for="{{back_array}}">
-        <swiper-item>
-          <image src='{{item.src}}' mode='scaleToFill'></image>
-        </swiper-item>
-      </block>
-    </swiper>
-    <swiper id='homePage_swiper' circular='true' previous-margin='140rpx' next-margin='140rpx'current="{{index}}" bindchange='bindchange'>
-      <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
-        <swiper-item class="swiper_item">
-          <view class='swiper_item_content'>
-            <view class='content_bookMessage' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
-              <image src='{{item.bookImage}}' mode='scaleToFill'></image>
-              <text>{{item.bookName}}</text>
+    <view id='topPart'>
+     <text id='rank_list_text'>今日排行</text>
+      <swiper id='rank_list_swiper' display-multiple-items="5">
+        <block wx:for="{{user_array}}">
+          <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
+            <image src='{{item.userImage}}' mode='scaleToFill'></image>
+            <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view id='bottomPart_select'>
+      <text id='have' bindtap='choose_swiper1'>全部</text>
+      <text id='not_have' bindtap='choose_swiper2'>已有书籍</text>
+      <view id='{{swiper_type ? bottom_border_left : bottom_border_right}}'></view>
+    </view>
+    <view id='bottomPart'>
+      <view id='homePage_backswiper_maxk'></view>
+      <swiper id='homePage_backswiper' circular='true' current="{{index}}" duration='0'>
+        <block wx:for="{{back_array}}">
+          <swiper-item>
+            <image src='{{item.src}}' mode='scaleToFill'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <swiper id='homePage_swiper' circular='true' previous-margin='140rpx' next-margin='140rpx'current="{{index}}" bindchange='bindchange'>
+        <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
+          <swiper-item class="swiper_item">
+            <view class='swiper_item_content'>
+              <view class='content_bookMessage' bindtap="swiper_navigate" data-bookid='{{item.bookID}}' data-onMyCollection='{{item.onMyCollection}}' data-bookname='{{bookName}}' data-bookImage='{{item.bookImage}}' data-bookAuthor='{{item.bookAuthor}}'>
+                <image src='{{item.bookImage}}' mode='scaleToFill'></image>
+                <text>{{item.bookName}}</text>
+              </view>
+              <view class='content_bookintroduce' bindtap="swiper_navigate" data-bookid='{{item.bookID}}' data-onMyCollection='{{item.onMyCollection}}' data-bookname='{{item.bookName}}' data-bookImage='{{item.bookImage}}' data-bookAuthor='{{item.bookAuthor}}'>
+                <text space='emsp'>  {{item.bookSummary}}</text>
+              </view>
+              <view class='content_button'>
+                <image src='{{ item.onMyCollection ? "../../images/like1.png" :"../../images/like.png" }}' bindtap='clickLike' bindload='matchBook' data-booKID="{{item.bookID}}" data-index='{{index}}' data-onMyCollection='{{item.onMyCollection}}' ></image>
+                <image src='../../images/share.png'></image>
+              </view>
             </view>
-            <view class='content_bookintroduce' bindtap="swiper_navigate" data-bookid='{{item.bookID}}'>
-              <text space='emsp'>  {{item.bookSummary}}</text>
-            </view>
-            <view class='content_button'>
-              <image src='{{ item.onMyCollection ? "../../images/like1.png" :"../../images/like.png" }}' bindtap='clickLike' bindload='matchBook' data-booKID="{{item.bookID}}" data-index='{{index}}' data-onMyCollection='{{item.onMyCollection}}' ></image>
-              <image src='../../images/share.png'></image>
-            </view>
-          </view>
-        </swiper-item>
-      </block>
-    </swiper>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
   </view>
-</view>
+  

@@ -3,14 +3,15 @@
     "pages/index/index",
     "pages/login/registe/registe",
     "pages/login/login",
+<<<<<<< HEAD
     
+=======
+>>>>>>> 89e88a03b889525968dff4aeca5f945fce71faca
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
-    
-    
     "pages/mine/exchangeRecord/exchangeRecord",
-    "pages/mine/myCollection/myCollection",
+   "pages/mine/myCollection/myCollection",
     "pages/mine/myCollection/toex/toex",
     "pages/myBookShelf/myBookShelf",
     "pages/myBookShelf/AddMyBook/AddMyBook",
