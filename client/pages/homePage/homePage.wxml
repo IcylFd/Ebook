@@ -37,7 +37,7 @@
               <text space='emsp'>  {{item.bookSummary}}</text>
             </view>
             <view class='content_button'>
-              <image src='{{item.button_like}}' bindtap='clickLike' data-index='{{index}}' data-src='{{item.button_like}}'></image>
+              <image src='{{ item.onMyCollection ? "../../images/like1.png" :"../../images/like.png" }}' bindtap='clickLike' bindload='matchBook' data-booKID="{{item.bookID}}" data-index='{{index}}' data-onMyCollection='{{item.onMyCollection}}' ></image>
               <image src='../../images/share.png'></image>
             </view>
           </view>
