@@ -3,9 +3,9 @@
   <view id='topPart'>
    <text id='rank_list_text'>今日排行</text>
     <swiper id='rank_list_swiper' display-multiple-items="5">
-      <block wx:for="{{rank_list_array}}">
+      <block wx:for="{{user_array}}">
         <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
-          <image src='{{item.rankImage}}' mode='scaleToFill'></image>
+          <image src='{{item.userImage}}' mode='scaleToFill'></image>
           <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
         </swiper-item>
       </block>
@@ -26,7 +26,7 @@
       </block>
     </swiper>
     <swiper id='homePage_swiper' circular='true' previous-margin='140rpx' next-margin='140rpx'current="{{index}}" bindchange='bindchange'>
-      <block wx:for="{{swiper_type?array:array_two}}">
+      <block wx:for="{{swiper_type?book_message_array:havedBook_message_array}}">
         <swiper-item class="swiper_item">
           <view class='swiper_item_content'>
             <view class='content_bookMessage' bindtap="swiper_navigate" data-like="{{item.like}}">
