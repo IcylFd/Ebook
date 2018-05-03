@@ -33,7 +33,7 @@ Page({
     var like = e.currentTarget.dataset.like;
     var that = this;
     wx.navigateTo({
-      url: './homePage_swiper_detail/homePage_swiper_detail?bookid='+e.currentTarget.dataset.bookid
+      url: './homePage_swiper_detail/homePage_swiper_detail?bookid=' + e.currentTarget.dataset.bookid + '&onmycollection=' + e.currentTarget.dataset.onmycollection + '&bookname=' + e.currentTarget.dataset.bookname + '&bookauthor=' + e.currentTarget.dataset.bookauthor + '&bookimage=' + e.currentTarget.dataset.bookimage
     })
   },
   //点击切换轮播图展示的类别
