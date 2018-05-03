@@ -1,16 +1,23 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+error_reporting(E_ALL || ~E_NOTICE);
 class Consumer_model extends CI_Model{
 	
-	
+	// var $link;
+  // $link=mysql_connect("https://2tmftt32.qcloud.la","root","wff19981124");
+
+        // public function __construct()
+        // {
+        //     parent::__construct();
+        //     $this->load->database();
+        // }
 
 
 	//注册账号
 	public function add_regsiter($username,$password,$sno,$weixin,$major)
 	{
 		$sql = "
-		    SELECT username FROM User WHERE username='".$username."'
+		    SELECT * FROM user WHERE username='"$username"'
 		";
 		$result = $this->db->query($sql);
 		$result = $result->result_array();
