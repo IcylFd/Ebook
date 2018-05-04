@@ -57,6 +57,7 @@ Page({
       book_message_array: app.globalData.book_message_array,
       my_: app.globalData.my_
     })
+    this.matchBook();
   },
 
   // 判断全部书籍中的书是否在我的收藏里
@@ -107,13 +108,13 @@ Page({
           this.setData({
             my_: my_
           });
+          app.globalData.my_ = my_;
           if (this.data.swiper_type == true) {
             var path = 'book_message_array[' + index + '].onMyCollection';
             this.setData({
               [path]: false
             })
           } else {
-
             var path = 'havedBook_message_array[' + index + '].onMyCollection';
             this.setData({
               [path]: false
@@ -126,6 +127,7 @@ Page({
       this.setData({
         my_: my_
       })
+      app.globalData.my_ = my_;
       if (this.data.swiper_type == true) {
         var path = 'book_message_array[' + index + '].onMyCollection';
         this.setData({

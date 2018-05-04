@@ -28,15 +28,22 @@ Page({
   },
   clickLike: function (event) {
     var my_ = app.globalData.my_;
-    for(var i=0;i<my_.userCollection.length;i++){
-      if (my_.userCollection[i]==this.data.book_note.bookId){
-        my_.userCollection.splice(i,1);
+    var book_note = this.data.book_note;
+    if(book_note.onmycollection == 'true'){
+      for (var i = 0; i < my_.userCollection.length; i++) {
+        if (my_.userCollection[i] == book_note.bookId) {
+          my_.userCollection.splice(i, 1);
+          book_note.onmycollection = 'false';
+        }
       }
+    }else{
+      my_.userCollection[my_.userCollection.length+1] = book_note.bookId;
+      book_note.onmycollection = 'true';
     }
-    app.globalData.my_ = my_;
-    wx.navigateBack({
-      
+    this.setData({
+      book_note : book_note
     })
+    app.globalData.my_ = my_;
   },
 
   onExchangeTap: function (event) {
