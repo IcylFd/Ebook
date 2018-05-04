@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 //error_reporting(0);
 
-class Welcome extends CI_Controller {
+class Consumer extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,7 +23,9 @@ class Welcome extends CI_Controller {
 
     //接口
    
-	    public function apiReturn($data = array(), bool $correct = true)
+
+
+	    public function apiReturn($data = array(), $correct = true)
 	    {
 		    $result = array(
 			    'code'    => 0,
@@ -107,8 +109,8 @@ class Welcome extends CI_Controller {
         }
         else
         {
-        	$this->load->model('Welcome_model');
-		    $result = $this->Welcome_model->add_regsiter($username,$password,$sno,$weixin,$major);
+        	$this->load->model('Consumer_model');
+		    $result = $this->Consumer_model->add_regsiter($username,$password,$sno,$weixin,$major);
 		    $this->apiReturn($result,$flag);
         }
 
@@ -125,16 +127,39 @@ class Welcome extends CI_Controller {
     //登录
 	public function login()
 	{
+		//unset($_SESSION['username']);
+        if(!isset($_SESSION['username']))
+        {
+        	echo "请先登录";
+        }
+        else
+        {
+        	echo "111";
+        }
+
+
 		$username = $this->input->post('username');
 		$pwd = $this->input->post('pwd');
 		$password = strtoupper(md5($pwd));
 		//$password = $this->input->get('password');
 
-		$this->load->model('Welcome_model');
-		$result = $this->Welcome_model->get_login($username,$password);
+		$this->load->model('Consumer_model');
+		$result = $this->Consumer_model->get_login($username,$password);
+        
+        //unset($_SESSION['username']);
+        // if(!isset($_SESSION['username']))
+        // {
+        // 	echo "请先登录";
+        // }
+        // else
+        // {
+        // 	echo "111";
+        // }
+
 
         if($result === FALSE)
 	    {
+	    	unset($_SESSION['username']);
 	    	$data = '账号不存在或密码错误';
 		    $this->apiReturn($data,$result);
 	    }
@@ -142,7 +167,11 @@ class Welcome extends CI_Controller {
 	    {	
 		    $data = '登录成功';
 		    $this->apiReturn($data,$result);
+		    $_SESSION['username'] = $username;
 	    }
+
+
+
 
 	}
 

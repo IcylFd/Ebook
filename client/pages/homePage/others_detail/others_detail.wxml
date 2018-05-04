@@ -3,11 +3,11 @@
 <import src="../../template/template_comment/template_comment.wxml"/>
 <view id='others_detail'>
   <view id='others_message'>
-    <image id='others_image' src='{{others_message.image}}'></image>
-    <text id='others_name'>{{others_message.name}}</text>
+    <image id='others_image' src='{{user.userImage}}'></image>
+    <text id='others_name'>{{user.userName}}</text>
     <view id='sexAdengji'>
-      <image src='{{ others_message.sex == true ? "../../../images/boy.png":"../../../images/girl.png" }}' mode='scaleToFill'></image>
-      <text>Lv.{{others_message.dengji}}</text>
+      <image src='{{ others_message.sex == 0 ? "../../../images/boy.png":"../../../images/girl.png" }}' mode='scaleToFill'></image>
+      <text>Lv.{{user.userLevel}}</text>
     </view>
   </view>
   <view id='booksAarticals'>

@@ -17,6 +17,7 @@ Page({
     my_: ""
   },
   toOthers_detail: function (e) {
+    app.globalData.u_array = e.currentTarget.dataset.user;
     wx.navigateTo({
       url: './others_detail/others_detail',
     })
@@ -29,7 +30,6 @@ Page({
   },
   // 滑块点击显示书籍详情
   swiper_navigate: function (e) {
-    console.log(e);
     var like = e.currentTarget.dataset.like;
     var that = this;
     wx.navigateTo({

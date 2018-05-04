@@ -4,9 +4,9 @@
      <text id='rank_list_text'>今日排行</text>
       <swiper id='rank_list_swiper' display-multiple-items="5">
         <block wx:for="{{user_array}}">
-          <swiper-item class='rank_list_swiper_item' bindtap="toOthers_detail">
-            <image src='{{item.userImage}}' mode='scaleToFill'></image>
-            <text class='rank_list_swiper_item_lv'>Lv.{{item.Lv}}</text>
+          <swiper-item class='rank_list_swiper_item' >
+            <image src='{{item.userImage}}' mode='scaleToFill' bindtap="toOthers_detail" data-userid='{{item.userId}}' data-userimage='{{item.userImage}}' data-userlevel='{{item.userLevel}}' data-username='{{item.userName}}' data-usersex='{{item.userSex}}' data-usershelf='{{item.userShelf}}' data-user='{{item}}'></image>
+            <text class='rank_list_swiper_item_lv'>Lv.{{item.userLevel}}</text>
           </swiper-item>
         </block>
       </swiper>

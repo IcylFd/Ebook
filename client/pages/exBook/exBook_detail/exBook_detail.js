@@ -1,4 +1,5 @@
 // pages/exBook/exBook_detail/exBook_detail.js
+var postdata = require("../../../data/books_data.js");
 Page({
 
   /**
@@ -47,6 +48,26 @@ Page({
     this.setData({
       book_message: book_message
     })
+    var all_user = postdata.postlist.user_array;
+    var user;
+    console.log(all_user)
+    for(var i=0;i<all_user.length;i++){
+      for(var j=0;j<all_user[i].userShelf.length;j++){
+        if (options.bookid == all_user[i].userShelf[j].bookId){
+          user = {
+            userid: all_user[i].userId,
+            userimage: all_user[i].userImage,
+            username: all_user[i].userName,
+            want: all_user[i].userShelf[j].want
+          }
+          break;
+        }
+      }
+    }
+    this.setData({
+      user: user
+    })
+    console.log(user);
   },
 
   onToexTap: function (event) {

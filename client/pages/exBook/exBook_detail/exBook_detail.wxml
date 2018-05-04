@@ -8,10 +8,10 @@
       <text>本书来自:</text>
     </view>
     <view id='bookFrom_bottom'>
-      <view class='avator'><image src='../../img/icon/icon-1.jpg' bindtap='toUser'></image></view>
+      <view class='avator'><image src='{{user.userimage}}' bindtap='toUser'></image></view>
       <view id='bookFrom_bottom_right'>
-        <text>user name</text>
-        <text>Ta想要: 高等数学</text>
+        <text>{{user.username}}</text>
+        <text>Ta想要: {{user.want}}</text>
       </view>
       <view class="exchange-button" bindtap='onToexTap'>
           <text>去交换</text>
