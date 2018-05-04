@@ -10,10 +10,10 @@ Page({
       {
         userImage: "http://img.zcool.cn/community/016b3756ea1b1a32f875520fc0224b.jpg@900w_1l_2o_100sh.jpg",
         userName: "Benny",
-        bookImage: "https://img3.doubanio.com/view/subject/l/public/s1817666.jpg",
-        bookName: "海底两万里",
+        bookImage: "https://img3.doubanio.com/view/subject/l/public/s4610502.jpg",
+        bookName: "白夜行",
         position: "林大家属区",
-        toExchange: "高等数学",
+        toExchange: "三体",
         tradingState: "待确认"
       }, {
         userImage: "http://img63.nipic.com/file/20150416/20852081_222349129000_1.jpg",
@@ -54,6 +54,7 @@ Page({
       wx.showModal({
         title: '',
         content: '您已确认交换，等待对方确认',
+        confirmColor: "#95add0"
       })
     }
   }

@@ -20,11 +20,12 @@ Page({
   Log: function(e){
     var that = this;
     wx.request({
-      url: 'https://xmbhmxfp.qcloud.la/Welcome',
+      url: 'https://659437054.exchangebook.xyz/consumer/register',
       method: "POST",
       data: {
         username: that.userName,
-        pwd: that.userPassword
+        pwd: that.userPassword,
+        
       },
       success: function(e){
         console.log(e);

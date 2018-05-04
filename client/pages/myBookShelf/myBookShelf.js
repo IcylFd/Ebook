@@ -5,7 +5,7 @@ Page({
     my_bookshelf: [],
   },
 
-  onLoad: function (options) {
+  onShow: function (options) {
     var bookshelf = [];
     var length = bookshelf.length;
     for (var i = 0; i < app.globalData.my_.userShelf.length; i++) {
@@ -29,6 +29,8 @@ Page({
     this.setData({
       book_array:book_array
     })
+    console.log(bookshelf);
+    console.log(book_array);
   },
   onBookTap: function (event) {
     wx.navigateTo({

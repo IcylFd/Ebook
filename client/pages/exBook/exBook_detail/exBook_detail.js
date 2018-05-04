@@ -30,9 +30,18 @@ Page({
     ]
   },
   toUser: function(e){
+    var userId = this.data.user.userid;
+    var user_array = app.globalData.user_array;
+    for(var i=0;i<user_array.length;i++){
+      if(userId == user_array[i].userId){
+        app.globalData.u_array = user_array[i];
+        break;
+      }
+    }
     wx.navigateTo({
       url: '../../homePage/others_detail/others_detail',
     })
+    
   },
   /**
    * 生命周期函数--监听页面加载

@@ -51,7 +51,6 @@ Page({
     this.setData({
       user: app.globalData.u_array
     })
-    console.log(this.data.user);
     var book_message_array = app.globalData.book_message_array;
     var booksArray = [];
     for (var i = 0; i < this.data.user.userShelf.length;i++ ){
@@ -64,7 +63,7 @@ Page({
     this.setData({
       booksArray: booksArray
     })
-    
+    console.log(this.data.user.sex);
   },
 
   /**

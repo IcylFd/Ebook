@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/login/registe/registe",
     
     "pages/myBookShelf/myBookShelf",
     "pages/mine/myCollection/myCollection",
-    "pages/index/index",
-    "pages/login/registe/registe",
+    
+    
     "pages/login/login",
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
