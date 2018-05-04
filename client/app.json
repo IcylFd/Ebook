@@ -1,9 +1,9 @@
 {
   "pages": [
-    
+    "pages/index/index",
     "pages/myBookShelf/myBookShelf",
     "pages/mine/myCollection/myCollection",
-    "pages/index/index",
+    
     "pages/login/registe/registe",
     "pages/login/login",
     "pages/homePage/homePage",

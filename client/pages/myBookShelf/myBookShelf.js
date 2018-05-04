@@ -39,7 +39,7 @@ Page({
     wx.scanCode({
       success: (res) => {
         wx.request({
-          url: 'http://api.jisuapi.com/isbn/query',
+          url: 'https://2tmftt32.qcloud.la/isbn_search/get_isbn',
           data: {
             
           },
