@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/myBookShelf/myBookShelf",
+    "pages/mine/myCollection/myCollection",
     "pages/index/index",
     "pages/login/registe/registe",
     "pages/login/login",
@@ -7,9 +9,9 @@
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
     "pages/mine/exchangeRecord/exchangeRecord",
-   "pages/mine/myCollection/myCollection",
+   
     "pages/mine/myCollection/toex/toex",
-    "pages/myBookShelf/myBookShelf",
+    
     "pages/myBookShelf/AddMyBook/AddMyBook",
     "pages/myBookShelf/myBookDetails/myBookDetails",
     "pages/exBook/exBook",

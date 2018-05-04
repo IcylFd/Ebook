@@ -1,7 +1,8 @@
 /* pages/myBookShelf/myBookShelf.wxss */
 .back{
   background-image: url("http://www.taopic.com/uploads/allimg/140831/240409-140S10K22842.jpg");
-  height:auto;
+  min-height:100vh;
+  height: auto;
 }
 .search{
   margin-top:10rpx;

@@ -388,6 +388,7 @@ var local_database = {
       userCollection: [
 
       ],
+
       userShelf: [{
           bookId: "11",
           want: "三体"
@@ -472,10 +473,27 @@ var local_database = {
     userLevel: "",
     userName: "",
     userCollection: ["0","2","5"],
-    userMessage: {
-      
+    userShelf: [{
+      bookId: "16",
+      want: "高等数学A1"
+    },
+    {
+      bookId: "15",
+      want: "我在未来等你"
+    },
+    {
+      bookId: "17",
+      want: "乔布斯传"
+    },
+    {
+      bookId: "6",
+      want: "线性代数"
+    },
+    {
+      bookId:"5",
+      want:"大学物理"
     }
-
+    ]
   }
 }
 

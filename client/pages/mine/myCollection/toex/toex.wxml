@@ -9,7 +9,7 @@
     <view id='message'>
       <image src='../../../img/icon/icon-1.jpg' mode='scaleToFill' bindtap='onAvatorTap'></image>
       <text>user name</text>
-      <view id="exchange-button" bindtap=''>
+      <view id="exchange-button" bindtap='onExchangeTap'>
           <text>与TA交换</text>
         </view>
     </view>

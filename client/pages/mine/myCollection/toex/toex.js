@@ -29,5 +29,19 @@ Page({
     //   })
     // }
   },
+
+  onExchangeTap: function (event) {
+    wx.showModal({
+      content: '是否确认给对方发送换书请求',
+      confirmColor: '#bbc5ef',
+      success: function (res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  }
   
 })
