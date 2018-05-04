@@ -1,7 +1,7 @@
 <view class='book-title'>
-  <image class='book-img' src="../../img/books/book6.jpg"></image>
-  <text class='title'>高等数学</text>
-  <text class='author'>第六版</text>
+  <image class='book-img' src="{{bookimage}}"></image>
+  <text class='title'>{{bookname}}</text>
+  <text class='author'>{{bookauthor}}</text>
   <image src='../../../images/delete.png' class='delete' bindtap='confirm_delete'></image>
 </view>
 

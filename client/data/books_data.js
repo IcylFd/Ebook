@@ -277,16 +277,12 @@ var local_database = {
 
       ],
       userShelf: [{
-        bookId: "4",
+        bookId: "13",
         want: "高等数学A1"
       },
       {
         bookId: "1",
         want: "目送"
-      },
-      {
-        bookId: "11",
-        want: "三体"
       }
       ]
     },
@@ -301,11 +297,11 @@ var local_database = {
       ],
       userShelf: [
       {
-        bookId: "3",
+        bookId: "0",
         want: "三体"
       },
       {
-        bookId: "9",
+        bookId: "5",
         want: "线性代数"
       }
       ]
@@ -337,11 +333,11 @@ var local_database = {
 
       ],
     userShelf: [{
-      bookId: "17",
+      bookId: "10",
       want: "概率论"
     },
     {
-      bookId: "6",
+      bookId: "14",
       want: "经济学原理"
     }]
     },
@@ -355,12 +351,8 @@ var local_database = {
 
       ],
       userShelf: [{
-        bookId: "17",
+        bookId: "15",
         want: "概率论"
-      },
-      {
-        bookId: "6",
-        want: "经济学原理"
       }]
     }, 
     {
@@ -375,10 +367,6 @@ var local_database = {
       userShelf: [{
         bookId: "17",
         want: "概率论"
-      },
-      {
-        bookId: "6",
-        want: "经济学原理"
       }]
     }, 
     {
@@ -391,12 +379,8 @@ var local_database = {
 
       ],
       userShelf: [{
-        bookId: "17",
+        bookId: "18",
         want: "概率论"
-      },
-      {
-        bookId: "6",
-        want: "经济学原理"
       }]
     },
     {
@@ -408,14 +392,11 @@ var local_database = {
       userCollection: [
 
       ],
-      userShelf: [{
-        bookId: "17",
-        want: "概率论"
-      },
-      {
-        bookId: "6",
-        want: "经济学原理"
-      }]
+      userShelf: [,
+        {
+          bookId: "11",
+          want: "三体"
+        }]
     }
   ],
 
@@ -496,9 +477,27 @@ var local_database = {
     userLevel: "",
     userName: "",
     userCollection: ["0","2","5"],
-    userMessage: {
-
+    userShelf: [{
+      bookId: "16",
+      want: "高等数学A1"
+    },
+    {
+      bookId: "15",
+      want: "我在未来等你"
+    },
+    {
+      bookId: "17",
+      want: "乔布斯传"
+    },
+    {
+      bookId: "6",
+      want: "线性代数"
+    },
+    {
+      bookId:"5",
+      want:"大学物理"
     }
+    ]
   }
 }
 
