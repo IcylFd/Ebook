@@ -15,6 +15,5 @@ App({
     },
     onLaunch: function () {
         qcloud.setLoginUrl(config.service.loginUrl)
-        console.log(this.globalData.my_);
     },
 })

@@ -1,11 +1,12 @@
 // pages/mine/mine.js
+var app = getApp();
 Page({
 
   data: {
   
   },
 
-  onLoad: function (options) {
+  onLoad: function (e) {
   
   },
 

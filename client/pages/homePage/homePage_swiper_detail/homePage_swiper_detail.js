@@ -58,7 +58,7 @@ Page({
             my_: this.data.my_,
             onmycollection: 'false'
           });
-          // app.globalData.my_ = this.data.my_;
+          app.globalData.my_ = this.data.my_;
 
         }
       }
@@ -68,7 +68,7 @@ Page({
         my_: this.data.my_,
         onmycollection: 'true'
       });
-      // app.globalData.my_ = this.data.my_;
+      app.globalData.my_ = this.data.my_;
     }
   },
   matchOnmycollection: function (e) {

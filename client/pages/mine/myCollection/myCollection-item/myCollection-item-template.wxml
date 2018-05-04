@@ -1,14 +1,14 @@
 <template name="item">
   <view class='container'>
     <view class="item">
-      <view bindtap='to_toex'><image class="item-img" src="{{url}}" mode="widthFix"></image></view>
+      <view bindtap='onToexTap' data-bookid='{{bookId}}'><image class="item-img" src="{{bookImage}}" mode="widthFix"></image></view>
       <view class="item-title-box">
-        <view class='item-title'>{{title}}</view>
+        <view class='item-title'>{{bookName}}</view>
       </view>
       <view class="name">
-        <image class="item-ava" src="{{avatar}}"></image>
-        <text class="name-title">{{name}}</text>
-        <view class="exchange-button" bindtap='onToexTap'>
+        <image class="item-ava" src="{{userimage}}"></image>
+        <text class="name-title">{{username}}</text>
+        <view class="exchange-button" bindtap='onToexTap' data-bookid='{{bookId}}'>
           去交换
         </view>
       </view>

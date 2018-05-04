@@ -1,66 +1,12 @@
-var app = getApp()
+var app = getApp();
 Page({
   data: {
     open: false,
     mark: 0,
     newmark: 0,
     istoright: true,
-    note: [
-      {
-        name: '大脸猫爱吃鱼大脸猫爱吃鱼大脸猫爱吃鱼大脸猫爱吃鱼大脸猫爱吃鱼',
-        heart_num: '1',
-        title: '撒哈拉的故事',
-        url: '../../img/books/book1.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      },
-      {
-        name: '大脸猫爱吃鱼',
-        heart_num: '2',
-        title: '偷影子的人',
-        url: '../../img/books/book2.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      },
-      {
-        name: '大脸猫爱吃鱼',
-        heart_num: '3',
-        title: '白夜行',
-        url: '../../img/books/book3.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      }, {
-        name: '大脸猫爱吃鱼',
-        heart_num: '4',
-        title: '老人与海',
-        url: '../../img/books/book4.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      },
-      {
-        name: '大脸猫爱吃鱼',
-        heart_num: '5',
-        title: '数学之美',
-        url: '../../img/books/book5.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      },
-      {
-        name: '大脸猫爱吃鱼',
-        heart_num: '6',
-        title: '白夜行',
-        url: '../../img/books/book3.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      },
-      {
-        name: '大脸猫爱吃鱼',
-        heart_num: '7',
-        title: '你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识',
-        url: '../../img/books/book1.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      }, {
-        name: '大脸猫爱吃鱼',
-        heart_num: '8',
-        title: '你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识你所不知道的红酒知识',
-        url: '../../img/books/book2.jpg',
-        avatar: '../../img/icon/icon-1.jpg'
-      }
-    ]
+    note: ""
+
   },
   tap_ch: function (e) {
     if (this.data.open) {
@@ -114,12 +60,54 @@ Page({
   },
   onToexTap:function(event){
     wx.navigateTo({
-      url: 'toex/toex',
+      url: 'toex/toex?bookid='+event.currentTarget.dataset.bookid,
     })
   },
-  to_toex: function(e){
-    wx.navigateTo({
-      url: 'toex/toex',
+  onShow: function(){
+    var collection = app.globalData.my_.userCollection;
+    var book_message_array = app.globalData.book_message_array;
+    var collection_array = [];
+    for (var i = 0; i < collection.length; i++) {
+      for (var j = 0; j < book_message_array.length; j++) {
+        if (collection[i] == book_message_array[j].bookID) {
+          collection_array[i] = book_message_array[j];
+        }
+      }
+    }
+    var all_user = app.globalData.user_array;
+    var user = [];
+    for (var x = 0; x < collection.length; x++) {
+      var bookid = collection[x];
+      for (var i = 0; i < all_user.length; i++) {
+        for (var j = 0; j < all_user[i].userShelf.length; j++) {
+          if (bookid == all_user[i].userShelf[j].bookId) {
+            user[x] = {
+              userid: all_user[i].userId,
+              userimage: all_user[i].userImage,
+              username: all_user[i].userName,
+              want: all_user[i].userShelf[j].want
+            }
+          }
+        }
+      }
+    }
+    var note = [];
+    for (var i = 0; i < user.length; i++) {
+      note[i] = {
+        bookName: collection_array[i].bookName,
+        bookImage: collection_array[i].bookImage,
+        bookId: collection_array[i].bookID,
+        bookAuthor: collection_array[i].bookAuthor,
+        userid: user[i].userid,
+        userimage: user[i].userimage,
+        username: user[i].username,
+        want: user[i].want,
+        onmycollection: 'true'
+      }
+    }
+    this.setData({
+      note: note
     })
+    app.globalData.note = note;
   }
 })

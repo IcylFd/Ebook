@@ -50,7 +50,6 @@ Page({
     })
     var all_user = postdata.postlist.user_array;
     var user;
-    console.log(all_user)
     for(var i=0;i<all_user.length;i++){
       for(var j=0;j<all_user[i].userShelf.length;j++){
         if (options.bookid == all_user[i].userShelf[j].bookId){

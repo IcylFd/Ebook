@@ -1,14 +1,14 @@
 <!--pages/mine/toex/toex.wxml-->
 <import src="../../../template/template_bookMessage/template_bookMessage.wxml"/>
 <view id='toex'>
-  <template is="bookMessage" data="{{buttonLike}}"></template>
+  <template is="bookMessage" data="{{...book_note}}"></template>
   <view id='from'>
     <view id='from_text'>
       <text>本书来自</text>
     </view>
     <view id='message'>
-      <image src='../../../img/icon/icon-1.jpg' mode='scaleToFill' bindtap='onAvatorTap'></image>
-      <text>user name</text>
+      <image src='{{book_note.userimage}}' mode='scaleToFill' bindtap='onAvatorTap'></image>
+      <text>{{book_note.username}}</text>
       <view id="exchange-button" bindtap='onExchangeTap'>
           <text>与TA交换</text>
         </view>
@@ -17,7 +17,7 @@
   <view id='ex_message'>
     <view class='ex_message_part'>
       <text>TA想要</text>
-      <text>高等数学</text>
+      <text>{{book_note.want}}</text>
     </view>
     <view class='ex_message_part'>
       <text>上架时间</text>

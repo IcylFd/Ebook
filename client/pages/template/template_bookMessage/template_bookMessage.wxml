@@ -1,16 +1,16 @@
 <!--pages/template/template_bookMessage/template_bookMessage.wxml-->
 <template name="bookMessage">
   <view id='bookMessage'>
-    <image id='bookMessage_left' src='{{bookimage}}' mode='scaleToFill'></image>
+    <image id='bookMessage_left' src='{{bookImage}}' mode='scaleToFill'></image>
     <view id='bookMessage_right'>
       <view id='bookMessage_right_top'>
-        <text>{{bookname}}</text>
+        <text>{{bookName}}</text>
       </view>
       <view id='bookMessage_right_center'>
-        <text>{{bookauthor}}</text>
+        <text>{{bookAuthor}}</text>
       </view>
       <view id='bookMessage_right_bottom'>
-        <image src='{{onmycollection=="true"?"../../../images/like1.png":"../../../images/like.png"}}' bindtap='clickLike'></image>
+        <image src='{{onmycollection == "true" ? "/images/like1.png":"/images/like.png"}}' bindtap='clickLike'></image>
       </view>
     </view>
   </view>

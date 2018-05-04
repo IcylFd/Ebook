@@ -49,7 +49,7 @@ Page({
   },
 
 
-  onLoad: function (e) {
+  onShow: function (e) {
     this.setData({
       back_array: postdata.postlist.back_array,
       havedBook_message_array: app.globalData.havedBook_message_array,
