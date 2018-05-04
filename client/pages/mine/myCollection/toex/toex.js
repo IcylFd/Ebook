@@ -10,6 +10,7 @@ Page({
     var bookid = options.bookid;
     var note = app.globalData.note;
     var book_note = {};
+    console.log(note);
     for(var i=0;i<note.length;i++){
       if(note[i].bookId==bookid){
         book_note = note[i];
@@ -19,6 +20,7 @@ Page({
     this.setData({
       book_note: book_note
     })
+    console.log(book_note);
   },
 
   onAvatorTap:function(event){

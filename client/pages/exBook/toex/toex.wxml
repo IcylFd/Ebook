@@ -1,0 +1,31 @@
+
+<import src="../../template/template_bookMessage/template_bookMessage.wxml"/>
+<view id='toex'>
+  <template is="bookMessage" data="{{...book}}"></template>
+  <view id='from'>
+    <view id='from_text'>
+      <text>本书来自</text>
+    </view>
+    <view id='message'>
+      <image src='{{user.userimage}}' mode='scaleToFill' bindtap='onAvatorTap'></image>
+      <text>{{user.username}}</text>
+      <view id="exchange-button" bindtap='onExchangeTap'>
+          <text>与TA交换</text>
+        </view>
+    </view>
+  </view>
+  <view id='ex_message'>
+    <view class='ex_message_part'>
+      <text>TA想要</text>
+      <text>{{user.want}}</text>
+    </view>
+    <view class='ex_message_part'>
+      <text>上架时间</text>
+      <text>2018.4.22</text>
+    </view>
+    <view class='ex_message_part'>
+      <text>距下架还有</text>
+      <text>5天</text>
+    </view>
+  </view>
+</view>

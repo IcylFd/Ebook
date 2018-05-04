@@ -46,6 +46,19 @@ Page({
       onmycollection: option.onmycollection,
       my_: app.globalData.my_
     })
+    var user_array = app.globalData.user_array;
+    var book_haver = [];
+    for(var i=0;i<user_array.length;i++){
+      for (var j = 0; j < user_array[i].userShelf.length;j++){
+        if (this.data.bookid == user_array[i].userShelf[j].bookId){
+          book_haver[book_haver.length] = user_array[i];
+        }
+      }
+    }
+    this.setData({
+      book_haver : book_haver
+    })
+    console.log(book_haver);
   },
   clickLike: function (e) {
 

@@ -31,7 +31,7 @@ Page({
   },
   toDetail:function(e){
     wx.navigateTo({
-      url: '../../exBook/exBook_detail/exBook_detail',
+      url: '../../exBook/exBook_detail/exBook_detail?bookid=' + e.currentTarget.dataset.bookid + '&bookname=' + e.currentTarget.dataset.bookname + '&bookauthor=' + e.currentTarget.dataset.bookauthor + '&bookimage=' + e.currentTarget.dataset.bookimage + '&onmycollection=' + e.currentTarget.dataset.onmycollection,
     })
   },
   exchangeTobooks: function(e){
@@ -51,6 +51,7 @@ Page({
     this.setData({
       user: app.globalData.u_array
     })
+    console.log(this.data.user);
     var book_message_array = app.globalData.book_message_array;
     var booksArray = [];
     for (var i = 0; i < this.data.user.userShelf.length;i++ ){
@@ -63,6 +64,7 @@ Page({
     this.setData({
       booksArray: booksArray
     })
+    
   },
 
   /**

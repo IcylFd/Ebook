@@ -1,5 +1,6 @@
 // pages/exBook/exBook_detail/exBook_detail.js
 var postdata = require("../../../data/books_data.js");
+var app = getApp();
 Page({
 
   /**
@@ -37,12 +38,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
     var book_message = {
-      bookid: options.bookid,
-      bookname: options.bookname,
-      bookauthor: options.bookauthor,
-      bookimage: options.bookimage,
+      bookId: options.bookid,
+      bookName: options.bookname,
+      bookAuthor: options.bookauthor,
+      bookImage: options.bookimage,
       onmycollection: options.onmycollection
     }
     this.setData({
@@ -66,12 +66,14 @@ Page({
     this.setData({
       user: user
     })
-    console.log(user);
+    app.globalData.user = user;
+    app.globalData.book = book_message;
   },
 
   onToexTap: function (event) {
     wx.navigateTo({
-      url: '../../mine/myCollection/toex/toex',
+      url: '../toex/toex',
     })
-  }
+  },
+  
 })
