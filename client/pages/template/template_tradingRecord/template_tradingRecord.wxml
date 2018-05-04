@@ -2,29 +2,29 @@
 <template name="trading_record">
   <view class='trading_record_li'>
     <view class='li_top'>
-      <image src='../../img/icon/icon-1.jpg' mode='scaleToFill'></image>
-      <text>item.name</text>
+      <image src='{{userImage}}' mode='scaleToFill'></image>
+      <text>{{userName}}</text>
     </view>
     <view class='li_center'>
-      <image src='../../img/books/book3.jpg' mode='scaleToFill' class='li_center_left'></image>
+      <image src='{{bookImage}}' mode='scaleToFill' class='li_center_left'></image>
       <view class='li_center_right'>
         <view class='right_part'>
           <image src='../../img/point.png' mode='scaleToFill'></image>
-          <text>item.bookName</text>
+          <text>{{bookName}}</text>
         </view>
         <view class='right_part'>
           <image src='../../img/point.png' mode='scaleToFill'></image>
-          <text>item.position</text>
+          <text>{{position}}</text>
         </view>
         <view class='right_part'>
           <image src='../../img/point.png' mode='scaleToFill'></image>
-          <text>item.useName</text>
+          <text>{{toExchange}}</text>
         </view>
       </view>
     </view>
     <view class='li_bottom'>
-      <view class='li_bottom_state'>
-        <text>已完成</text>
+      <view class='li_bottom_state' bindtap='onTradingState' data-tradingState='{{tradingState}}'>
+        <text>{{tradingState}}</text>
       </view>
     </view>
   </view>

@@ -84,7 +84,5 @@ Page({
       app.globalData.my_ = this.data.my_;
     }
   },
-  matchOnmycollection: function (e) {
-
-  }
+  
 })
