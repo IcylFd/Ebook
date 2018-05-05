@@ -7,29 +7,57 @@ Page({
   data: {
   
   },
-  userName: function(e){
+  userName_f: function(e){
     this.setData({
       userName : e.detail.value
     })
+
   },
-  userPassword: function(e){
+  userPassword_f: function(e){
     this.setData({
       userPassword: e.detail.value
     })
 
   }, 
+  userRepwd_f: function(e){
+    this.setData({
+      userRepwd: e.detail.value
+    })  
+  },
+  userSno_f: function(e){
+    this.setData({
+      userSno: e.detail.value
+    })
+  },
+  userMajor_f: function(e){
+    this.setData({
+      userMajor: e.detail.value
+    })
+  },
+  userWechat_f: function(e){
+    this.setData({
+      userWechat:e.detail.value
+    })
+  },
   Log: function(e){
     var that = this;
     wx.request({
+
+
       url: 'https://2tmftt32.qcloud.la/consumer/register',
+      
+
       method: "POST",
       data: {
         username: that.userName,
         pwd: that.userPassword,
-        
+        repwd: 
+        sno:
+        major:
+        wechat: 
       },
       success: function(e){
-        console.log(e);
+        console.log(e);  
       }
     })
   },

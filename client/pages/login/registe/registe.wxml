@@ -2,27 +2,27 @@
 <view id='register'>
   <view class='rows'>
     <label>用户名:</label>
-    <input type='text' bindinput='userName'></input>
+    <input type='text' bindinput='userName_f'></input>
   </view>
   <view class='rows'>
     <label>密码:</label>
-    <input type='text' password='true' bindinput='userPassword'></input>
+    <input type='text' password='true' bindinput='userPassword_f'></input>
   </view>
   <view class='rows'>
     <label>确认密码:</label>
-    <input type='text' password='true'></input>
+    <input type='text' password='true' bindinput='userRepwd_f'></input>
   </view>
   <view class='rows'>
     <label>学号:</label>
-    <input type='text'></input>
+    <input type='text' bindinput='userSno_f'></input>
   </view>
   <view class='rows'>
     <label>院系:</label>
-    <input type='text'></input>
+    <input type='text' bindinput='userMajor_f'></input>
   </view>
   <view class='rows'>
     <label>微信号:</label>
-    <input type='text' password='true'></input>
+    <input type='text' bindinput='userWechat_f'></input>
   </view>
   <view id='button'>
     <button bindtap='Log'>立即注册</button>
