@@ -11,7 +11,7 @@
   </view>
   <view id='trading_records_container'>
     <block wx:for="{{arrays}}">
-      <template is="trading_record"></template>
+      <template is="trading_record" data="{{...item}}"></template>
     </block>
   </view>
 </view>

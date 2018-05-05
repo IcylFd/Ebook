@@ -1,4 +1,5 @@
 // pages/homePage/others_detail/others_detail.js
+var app = getApp();
 Page({
 
   /**
@@ -6,38 +7,6 @@ Page({
    */
   data: {
     books: true,
-    others_message: {
-      image: "http://img63.nipic.com/file/20150416/20852081_222349129000_1.jpg",
-      name: "Author",
-      sex: true,
-      dengji: "24"
-    },
-    booksArray: [
-      {
-        image: "../../../images/back_1.jpg",
-        introduction: "高等数学asdas"
-      },
-      {
-        image: "../../../images/back_2.jpg",
-        introduction: "高等数学ddddd"
-      },
-      {
-        image: "../../../images/back_3.jpg",
-        introduction: "高等数学asds"
-      },
-      {
-        image: "../../../images/back_4.jpg",
-        introduction: "高等数学2weasds"
-      },
-      {
-        image: "../../../images/back_5.jpg",
-        introduction: "高等数学asssss"
-      },
-      {
-        image: "../../../images/back_6.jpg",
-        introduction: "高等数学a"
-      }
-    ],
     articalsArray: [
       {
         title: "沉默的羔羊",
@@ -62,7 +31,7 @@ Page({
   },
   toDetail:function(e){
     wx.navigateTo({
-      url: '../../exBook/exBook_detail/exBook_detail',
+      url: '../../exBook/exBook_detail/exBook_detail?bookid=' + e.currentTarget.dataset.bookid + '&bookname=' + e.currentTarget.dataset.bookname + '&bookauthor=' + e.currentTarget.dataset.bookauthor + '&bookimage=' + e.currentTarget.dataset.bookimage + '&onmycollection=' + e.currentTarget.dataset.onmycollection,
     })
   },
   exchangeTobooks: function(e){
@@ -79,7 +48,22 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      user: app.globalData.u_array
+    })
+    var book_message_array = app.globalData.book_message_array;
+    var booksArray = [];
+    for (var i = 0; i < this.data.user.userShelf.length;i++ ){
+      for(var j=0;j<book_message_array.length;j++){
+        if (this.data.user.userShelf[i].bookId == book_message_array[j].bookID ){
+          booksArray.push(book_message_array[j]);
+        }
+      }
+    }
+    this.setData({
+      booksArray: booksArray
+    })
+    console.log(this.data.user.sex);
   },
 
   /**

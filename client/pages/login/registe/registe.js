@@ -20,11 +20,14 @@ Page({
   Log: function(e){
     var that = this;
     wx.request({
+
       url: 'https://2tmftt32.qcloud.la/consumer/register',
+
       method: "POST",
       data: {
         username: that.userName,
-        pwd: that.userPassword
+        pwd: that.userPassword,
+        
       },
       success: function(e){
         console.log(e);

@@ -1,22 +1,23 @@
 {
   "pages": [
     "pages/login/registe/registe",
-    "pages/index/index",
+
+    
+    "pages/myBookShelf/myBookShelf",
+    "pages/mine/myCollection/myCollection",
     
     "pages/login/login",
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
     "pages/mine/exchangeRecord/exchangeRecord",
-   "pages/mine/myCollection/myCollection",
     "pages/mine/myCollection/toex/toex",
-    "pages/myBookShelf/myBookShelf",
     "pages/myBookShelf/AddMyBook/AddMyBook",
     "pages/myBookShelf/myBookDetails/myBookDetails",
     "pages/exBook/exBook",
     "pages/exBook/exBook_detail/exBook_detail",
-    "pages/homePage/others_detail/others_detail"
-    
+    "pages/homePage/others_detail/others_detail",
+    "pages/exBook/toex/toex"
   ],
   "window": {
     "backgroundTextStyle": "light",

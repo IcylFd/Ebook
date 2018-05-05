@@ -5,11 +5,11 @@
     <input class='searchbox' placeholder='请输入书名' placeholder-style='font-size:30rpx' confirm-type='搜索'></input>
   </view>
   <view class='shelf'>
-    <block wx:for='{{books_key}}' wx:for-item="item" wx:key="">
+    <block wx:for='{{book_array}}'  wx:key="">
       <view bindtap='{{ index==0 ? "scanCode" : "todeatail" }}'>
       <image wx:if="{{index==0}}" src='../img/bookshelf-img/plus.png' class='plus'></image>
       </view>
-      <image class='book-img' src='{{item.img}}' bindtap='todeatail'></image>
+      <image class='book-img' src='{{item.bookImage}}' bindtap='todeatail' data-bookid='{{item.bookID}}' data-bookImage='{{item.bookImage}}' data-bookAuthor='{{item.bookAuthor}}' data-bookname='{{item.bookName}}'></image>
     <view class='seprate' wx:if="{{(index+1)%3==0}}"></view> 
     </block>
     <view class='seprate' wx:if="{{(books_key.length+1)%3!=0}}"></view> 

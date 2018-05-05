@@ -17,6 +17,7 @@ Page({
     my_: ""
   },
   toOthers_detail: function (e) {
+    app.globalData.u_array = e.currentTarget.dataset.user;
     wx.navigateTo({
       url: './others_detail/others_detail',
     })
@@ -29,7 +30,6 @@ Page({
   },
   // 滑块点击显示书籍详情
   swiper_navigate: function (e) {
-    console.log(e);
     var like = e.currentTarget.dataset.like;
     var that = this;
     wx.navigateTo({
@@ -49,7 +49,7 @@ Page({
   },
 
 
-  onLoad: function (e) {
+  onShow: function (e) {
     this.setData({
       back_array: postdata.postlist.back_array,
       havedBook_message_array: app.globalData.havedBook_message_array,
@@ -57,6 +57,7 @@ Page({
       book_message_array: app.globalData.book_message_array,
       my_: app.globalData.my_
     })
+    this.matchBook();
   },
 
   // 判断全部书籍中的书是否在我的收藏里
@@ -107,13 +108,13 @@ Page({
           this.setData({
             my_: my_
           });
+          app.globalData.my_ = my_;
           if (this.data.swiper_type == true) {
             var path = 'book_message_array[' + index + '].onMyCollection';
             this.setData({
               [path]: false
             })
           } else {
-
             var path = 'havedBook_message_array[' + index + '].onMyCollection';
             this.setData({
               [path]: false
@@ -126,6 +127,7 @@ Page({
       this.setData({
         my_: my_
       })
+      app.globalData.my_ = my_;
       if (this.data.swiper_type == true) {
         var path = 'book_message_array[' + index + '].onMyCollection';
         this.setData({

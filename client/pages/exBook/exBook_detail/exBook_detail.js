@@ -1,4 +1,6 @@
 // pages/exBook/exBook_detail/exBook_detail.js
+var postdata = require("../../../data/books_data.js");
+var app = getApp();
 Page({
 
   /**
@@ -25,24 +27,62 @@ Page({
         likecount: "26",
         commentcount: "261"
       }
-    ],
-    buttonLike: "../../../images/like.png"
+    ]
   },
   toUser: function(e){
+    var userId = this.data.user.userid;
+    var user_array = app.globalData.user_array;
+    for(var i=0;i<user_array.length;i++){
+      if(userId == user_array[i].userId){
+        app.globalData.u_array = user_array[i];
+        break;
+      }
+    }
     wx.navigateTo({
       url: '../../homePage/others_detail/others_detail',
     })
+    
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var book_message = {
+      bookId: options.bookid,
+      bookName: options.bookname,
+      bookAuthor: options.bookauthor,
+      bookImage: options.bookimage,
+      onmycollection: options.onmycollection
+    }
+    this.setData({
+      book_message: book_message
+    })
+    var all_user = postdata.postlist.user_array;
+    var user;
+    for(var i=0;i<all_user.length;i++){
+      for(var j=0;j<all_user[i].userShelf.length;j++){
+        if (options.bookid == all_user[i].userShelf[j].bookId){
+          user = {
+            userid: all_user[i].userId,
+            userimage: all_user[i].userImage,
+            username: all_user[i].userName,
+            want: all_user[i].userShelf[j].want
+          }
+          break;
+        }
+      }
+    }
+    this.setData({
+      user: user
+    })
+    app.globalData.user = user;
+    app.globalData.book = book_message;
   },
 
   onToexTap: function (event) {
     wx.navigateTo({
-      url: '../../mine/myCollection/toex/toex',
+      url: '../toex/toex',
     })
-  }
+  },
+  
 })
