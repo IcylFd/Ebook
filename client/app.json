@@ -1,12 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/registe/registe",
-    "pages/login/login",
-<<<<<<< HEAD
+    "pages/index/index",
     
-=======
->>>>>>> 89e88a03b889525968dff4aeca5f945fce71faca
+    "pages/login/login",
     "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",

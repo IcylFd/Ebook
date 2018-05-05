@@ -17,7 +17,7 @@ class Consumer_model extends CI_Model{
 	public function add_regsiter($username,$password,$sno,$weixin,$major)
 	{
 		$sql = "
-		    SELECT * FROM user WHERE username='"$username"'
+		    SELECT * FROM user WHERE username='".$username."'
 		";
 		$result = $this->db->query($sql);
 		$result = $result->result_array();

@@ -20,7 +20,7 @@ Page({
   Log: function(e){
     var that = this;
     wx.request({
-      url: 'https://xmbhmxfp.qcloud.la/Welcome',
+      url: 'https://2tmftt32.qcloud.la/consumer/register',
       method: "POST",
       data: {
         username: that.userName,
