@@ -5,16 +5,20 @@
     <input type='text' bindinput='userName'></input>
   </view>
   <view class='rows'>
-    <label>邮箱:</label>
-    <input type='text'></input>
-  </view>
-  <view class='rows'>
     <label>密码:</label>
     <input type='text' password='true' bindinput='userPassword'></input>
   </view>
   <view class='rows'>
     <label>确认密码:</label>
     <input type='text' password='true'></input>
+  </view>
+  <view class='rows'>
+    <label>学号:</label>
+    <input type='text'></input>
+  </view>
+  <view class='rows'>
+    <label>院系:</label>
+    <input type='text'></input>
   </view>
   <view class='rows'>
     <label>微信号:</label>
