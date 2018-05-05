@@ -16,11 +16,12 @@ Page({
     this.setData({
       userPassword: e.detail.value
     })
-  },
+
+  }, 
   Log: function(e){
     var that = this;
     wx.request({
-      url: 'https://659437054.exchangebook.xyz/consumer/register',
+      url: 'https://2tmftt32.qcloud.la/consumer/register',
       method: "POST",
       data: {
         username: that.userName,

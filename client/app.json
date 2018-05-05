@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/registe/registe",
+    "pages/index/index",
+    
     
     "pages/myBookShelf/myBookShelf",
     "pages/mine/myCollection/myCollection",
