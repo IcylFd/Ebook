@@ -71,12 +71,12 @@ class Consumer extends CI_Controller {
 		$password = strtoupper(md5($pwd));
 
 		$sno = $this->input->post('sno');
-		$weixin = $this->input->post('weixin');
+		$wechat = $this->input->post('wechat');
 		$major = $this->input->post('major');
 
 		$flag = TRUE;
         $data = array();
-        if($username == 'NULL')
+        if($username == NULL)
         {
         	$data['err_name'] = '请输入用户名';
         	$flag = FALSE;
@@ -86,17 +86,17 @@ class Consumer extends CI_Controller {
         	$data['err_pwd'] = '两次密码不一致';
         	$flag = FALSE;
         }
-        if($sno == 'NULL')
+        if($sno == NULL)
         {
         	$data['err_sno'] = '请输入学号';
         	$flag = FALSE;
         }
-        if($weixin == 'NULL')
+        if($wechat == NULL)
         {
-        	$data['err_weixin'] = '请输入微信号';
+        	$data['err_wechat'] = '请输入微信号';
         	$flag = FALSE;
         }
-        if($major== 'NULL')
+        if($major== NULL)
         {
         	$data['err_major'] = '请输入专业';
         	$flag = FALSE;
