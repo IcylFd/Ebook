@@ -49,12 +49,12 @@ Page({
 
       method: "POST",
       data: {
-        username: that.userName,
-        pwd: that.userPassword,
-        repwd: 
-        sno:
-        major:
-        wechat: 
+        username: that.data.userName,
+        pwd: that.data.userPassword,
+        repwd: that.data.userRepwd,
+        sno:  that.data.userSno,
+        major:  that.data.userMajor,
+        wechat:   that.data.userWechat
       },
       success: function(e){
         console.log(e);  

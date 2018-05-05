@@ -14,7 +14,7 @@ class Consumer_model extends CI_Model{
 
 
 	//注册账号
-	public function add_regsiter($username,$password,$sno,$weixin,$major)
+	public function add_regsiter($username,$password,$sno,$wechat,$major)
 	{
 		$sql = "
 		    SELECT * FROM user WHERE username='".$username."'
@@ -23,12 +23,13 @@ class Consumer_model extends CI_Model{
 		$result = $result->result_array();
 		if($result['username'] == $username)
 		{
-			echo '用户名已存在';
+			$result = "用户名已存在";
+      return $result;
 		}
 		else
 		{
 			$sql = "
-			    INSERT INTO User (user_id,username,password,sno,weixin,major) VALUES ('NULL','".$username."','".$password."','".$sno."','".$weixin."','".$major."')
+			    INSERT INTO User (user_id,username,password,sno,wechat,major) VALUES ('NULL','".$username."','".$password."','".$sno."','".$wechat."','".$major."')
 			";
 			$result = $this->db->query($sql);
 			return $result;
