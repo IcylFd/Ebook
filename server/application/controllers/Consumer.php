@@ -66,7 +66,6 @@ class Consumer extends CI_Controller {
 	public function register()
 	{
 		$username = $this->input->post('username');
-    echo $username;
 		$pwd = $this->input->post('pwd');
 		$repwd = $this->input->post('repwd');
 		$password = strtoupper(md5($pwd));
