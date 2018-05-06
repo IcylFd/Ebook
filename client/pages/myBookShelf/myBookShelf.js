@@ -50,7 +50,8 @@ Page({
           dataType: 'json',
           success: function(res) {
             console.log(res);
-            app.globalData.addingBook = res.data.data;
+            app.globalData.addingBook = res.data.data[0];
+            app.globalData.addingBook_Id = res.data.data[1];
           },
           fail: function(res) {},
           complete: function(res) {

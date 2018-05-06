@@ -38,37 +38,38 @@ Page({
     addingBook.bookClass = addingBook_.keyword;
     addingBook.bookIsbn = addingBook_.isbn;
     addingBook.bookEdition = addingBook_.edition;
-    var bookId
-    var flag = 1;
-    var flag_state = true;
-    while (flag_state) {
-      bookId = Math.random() * 100;
-      bookId = Math.floor(bookId).toString();
-      for (var i = 0; i < book_message_array.length; i++) {
-        if (bookId == book_message_array[i].bookID) {
-          flag = 0;
-          break;
-        }
-      }
-      if (flag == 1) {
-        flag_state = false;
-      }
-    }
-    addingBook.bookID = bookId;
-    for (var i = 0; i < my_.userShelf.length; i++) {
-      if (addingBook.bookID == my_.userShelf[i].bookId) {
-        wx.showModal({
-          content: '同一本书不能重复上架',
-          showCancel: false,
-          confirmColor: "#95add0",
-          success: function(){
-            wx.navigateBack({
+    addingBook.bookID = app.globalData.addingBook_Id;
+    // var bookId
+    // var flag = 1;
+    // var flag_state = true;
+    // while (flag_state) {
+    //   bookId = Math.random() * 100;
+    //   bookId = Math.floor(bookId).toString();
+    //   for (var i = 0; i < book_message_array.length; i++) {
+    //     if (bookId == book_message_array[i].bookID) {
+    //       flag = 0;
+    //       break;
+    //     }
+    //   }
+    //   if (flag == 1) {
+    //     flag_state = false;
+    //   }
+    // }
+    // addingBook.bookID = bookId;
+    // for (var i = 0; i < my_.userShelf.length; i++) {
+    //   if (addingBook.bookID == my_.userShelf[i].bookId) {
+    //     wx.showModal({
+    //       content: '同一本书不能重复上架',
+    //       showCancel: false,
+    //       confirmColor: "#95add0",
+    //       success: function(){
+    //         wx.navigateBack({
               
-            })
-          }
-        })
-      }
-    }
+    //         })
+    //       }
+    //     })
+    //   }
+    // }
     app.globalData.book_message_array[app.globalData.book_message_array.length] = addingBook;
     app.globalData.havedBook_message_array[app.globalData.havedBook_message_array.length]=addingBook;
     this.setData({
