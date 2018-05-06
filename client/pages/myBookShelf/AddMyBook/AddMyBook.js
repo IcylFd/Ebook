@@ -85,7 +85,8 @@ Page({
       url: 'https://2tmftt32.qcloud.la/Book/sjbook',
       data: {
         isbn: this.data.addingBook.bookIsbn,
-        wantbook: this.data.want
+        wantbook: this.data.want,
+        bookid: this.data.addingBook.bookID
       }
     })
     wx.showToast({
