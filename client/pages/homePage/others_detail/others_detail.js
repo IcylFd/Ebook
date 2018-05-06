@@ -63,7 +63,6 @@ Page({
     this.setData({
       booksArray: booksArray
     })
-    console.log(this.data.user.sex);
   },
 
   /**

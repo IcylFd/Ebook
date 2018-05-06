@@ -1,15 +1,12 @@
 {
   "pages": [
     "pages/login/registe/registe",
+    "pages/homePage/homePage",
     "pages/index/index",
-    
-
     
     "pages/myBookShelf/myBookShelf",
     "pages/mine/myCollection/myCollection",
-    
     "pages/login/login",
-    "pages/homePage/homePage",
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
     "pages/mine/exchangeRecord/exchangeRecord",
@@ -19,7 +16,8 @@
     "pages/exBook/exBook",
     "pages/exBook/exBook_detail/exBook_detail",
     "pages/homePage/others_detail/others_detail",
-    "pages/exBook/toex/toex"
+    "pages/exBook/toex/toex",
+    "pages/homePage/toex/toex"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -16,7 +16,7 @@
         <view id='scroll_box'>
           <scroll-view id='haver_swiper' scroll-x>
             <block wx:for="{{book_haver}}">
-              <view class='haver_swiper_item' bindtap='onAvatorTap'>
+              <view class='haver_swiper_item' bindtap='onAvatorTap' data-userId='{{item.userId}}'>
                 <image src='{{item.userImage}}'></image>
               </view>
             </block>

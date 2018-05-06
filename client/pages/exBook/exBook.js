@@ -9,7 +9,6 @@ Page({
      booksArray: ""     
   },
   toDetail: function(e){
-    console.log(e);
     wx.navigateTo({
       url: './exBook_detail/exBook_detail?bookid=' + e.currentTarget.dataset.bookid + '&bookname=' + e.currentTarget.dataset.bookname + '&bookauthor=' + e.currentTarget.dataset.bookauthor + '&bookimage=' + e.currentTarget.dataset.bookimage + '&onmycollection=' + e.currentTarget.dataset.onmycollection,
     })

@@ -29,8 +29,6 @@ Page({
     this.setData({
       book_array:book_array
     })
-    console.log(bookshelf);
-    console.log(book_array);
   },
   onBookTap: function (event) {
     wx.navigateTo({

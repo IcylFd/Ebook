@@ -57,7 +57,7 @@ Page({
     this.setData({
       book_message: book_message
     })
-    var all_user = postdata.postlist.user_array;
+    var all_user = app.globalData.user_array;
     var user;
     for(var i=0;i<all_user.length;i++){
       for(var j=0;j<all_user[i].userShelf.length;j++){
@@ -77,8 +77,44 @@ Page({
     })
     app.globalData.user = user;
     app.globalData.book = book_message;
+    
   },
-
+  onShow: function(e){
+    var my_ = app.globalData.my_;
+    var flag = 0;
+    var book_message = this.data.book_message;
+    for (var i = 0; i < my_.userCollection.length; i++) {
+      if (book_message.bookId == my_.userCollection[i]) {
+        flag = 1;
+        book_message.onmycollection = "true";
+      }
+    }
+    if(flag ==0){
+      book_message.onmycollection == "flase";
+    }
+    this.setData({
+      book_message: book_message
+    })
+  },
+  clickLike: function(e){
+    var my_ = app.globalData.my_;
+    var book_message = this.data.book_message;
+    if(book_message.onmycollection == "true"){
+      for(var i=0;i<my_.userCollection.length;i++){
+        if (book_message.bookId == my_.userCollection[i]){
+          my_.userCollection.splice(i,1);
+          book_message.onmycollection = "flase";
+        }
+      }
+    }else{
+      my_.userCollection[my_.userCollection.length] = book_message.bookId;
+      book_message.onmycollection = "true";
+    }
+    this.setData({
+      book_message: book_message
+    })
+    app.globalData.my_ = my_;
+  },
   onToexTap: function (event) {
     wx.navigateTo({
       url: '../toex/toex',
