@@ -33,8 +33,9 @@ Page({
     ]
   },
   onAvatorTap: function (e) {
+    
     wx.navigateTo({
-      url: '../../mine/myCollection/toex/toex',
+      url: '../toex/toex?bookid='+this.data.bookid+"&userid="+ e.currentTarget.dataset.userid ,
     })
   },
   onLoad: function (option) {
@@ -58,7 +59,26 @@ Page({
     this.setData({
       book_haver : book_haver
     })
-    console.log(book_haver);
+    
+  },
+  onShow: function(e){
+    this.setData({
+      my_: app.globalData.my_
+    })
+    var flag = 0;
+    for(var i=0;i<this.data.my_.userCollection.length;i++){
+      if (this.data.bookid == this.data.my_.userCollection[i]){
+        flag = 1;
+        this.setData({
+          onmycollection: "true"
+        })
+      }
+    }
+    if(flag == 0){
+      this.setData({
+        onmycollection: "false"
+      })
+    }
   },
   clickLike: function (e) {
 

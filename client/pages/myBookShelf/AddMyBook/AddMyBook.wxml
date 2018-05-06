@@ -1,17 +1,24 @@
 <view>
-  <view class='msg'>
-    <view>*书籍名称</view>
-    <input class='input-box'></input>
+  <view class='bookImage'>
+    <image src='{{addingBook_.pic}}'></image>
   </view>
   <view class='msg'>
-    <view>*作者</view>
-    <input class='input-box'></input>
+    <view>书籍名称</view>
+    <input class='input-box' disabled='true' value=' {{addingBook_.title}}'></input>
   </view>
   <view class='msg'>
-    <view>*想换书籍</view>
-    <input class='input-box'></input>
+    <view>版本</view>
+    <input class='input-box' disabled='true' value=' {{addingBook_.edition}}'></input>
   </view>
-  <view class='add-img-wrapper'>
+  <view class='msg'>
+    <view>作者</view>
+    <input class='input-box' disabled='true' value=' {{addingBook_.author}}'></input>
+  </view>
+  <view class='msg'>
+    <view>出版社</view>
+    <input class='input-box' disabled='true' value=' {{addingBook_.publisher}}'></input>
+  </view>
+  <!-- <view class='add-img-wrapper'>
     <view class='add-img'>
       <view class='add-img-text' catchtap='onTapCover'>
       <view>封面</view>
@@ -27,18 +34,12 @@
       </view>
       <image class='back' src='{{backImgPath}}' ></image>
     </view>
-  </view>
+  </view> -->
   <view class='msg'>
-    <view>出版社</view>
-    <input class='input-box'></input>
+    <view>想要书籍</view>
+    <input class='input-box' bindinput='want_f'></input>
   </view>
-
-  <view class='msg'>
-    <view>简介</view>
-    <input class='input-box'></input>
-  </view>
-
   <!-- <button class='reset' form-type='reset'>重置</button> -->
-  <button class='submit' form-type='submit'>提交</button>
+  <button class='submit' form-type='submit' bindtap='submit'>提交</button>
 
 </view>

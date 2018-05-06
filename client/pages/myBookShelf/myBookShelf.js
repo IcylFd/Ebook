@@ -29,8 +29,6 @@ Page({
     this.setData({
       book_array:book_array
     })
-    console.log(bookshelf);
-    console.log(book_array);
   },
   onBookTap: function (event) {
     wx.navigateTo({
@@ -41,18 +39,25 @@ Page({
     wx.scanCode({
       success: (res) => {
         wx.request({
-          url: 'https://2tmftt32.qcloud.la/isbn_search/get_isbn',
+          url: 'https://2tmftt32.qcloud.la/Isbn_search/get_isbn',
           data: {
-            
+            isbn: res.result
+          },
+          header: {
+            'content-type': 'application/x-www-form-urlencoded'
           },
           method: 'POST',
           dataType: 'json',
-          responseType: 'text',
           success: function(res) {
             console.log(res);
+            app.globalData.addingBook = res.data.data;
           },
           fail: function(res) {},
-          complete: function(res) {},
+          complete: function(res) {
+            wx.navigateTo({
+              url: 'AddMyBook/AddMyBook',
+            })
+          },
         })
       }
     })
