@@ -90,11 +90,12 @@ Page({
       }
     }
     if(flag ==0){
-      book_message.onmycollection == "flase";
+      book_message.onmycollection = "false";
     }
     this.setData({
       book_message: book_message
     })
+    console.log(book_message);
   },
   clickLike: function(e){
     var my_ = app.globalData.my_;
@@ -103,7 +104,7 @@ Page({
       for(var i=0;i<my_.userCollection.length;i++){
         if (book_message.bookId == my_.userCollection[i]){
           my_.userCollection.splice(i,1);
-          book_message.onmycollection = "flase";
+          book_message.onmycollection = "false";
         }
       }
     }else{

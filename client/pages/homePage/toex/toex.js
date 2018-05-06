@@ -53,9 +53,7 @@ Page({
     var my_ = app.globalData.my_;
     if(this.data.book.onmycollection == "true"){
       for(var i=0;i<my_.userCollection.length;i++){
-        console.log(this.data.book);
         if (this.data.book.bookID == my_.userCollection[i]){
-          
           my_.userCollection.splice(i,1);
           app.globalData.my_ = my_;
           var book = this.data.book;
