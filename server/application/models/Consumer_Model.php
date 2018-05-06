@@ -29,7 +29,7 @@ class Consumer_model extends CI_Model{
 		else
 		{
 			$sql = "
-			    INSERT INTO User (user_id,username,password,sno,wechat,major) VALUES ('NULL','".$username."','".$password."','".$sno."','".$wechat."','".$major."')
+			    INSERT INTO user (user_id,username,password,sno,wechat,major) VALUES ('NULL','".$username."','".$password."','".$sno."','".$wechat."','".$major."')
 			";
 			$result = $this->db->query($sql);
 			return $result;
@@ -52,7 +52,7 @@ class Consumer_model extends CI_Model{
 		else
 		{
 			$sql = "
-		        UPDATE User SET password = '".$password."' WHERE username = '".$username."'
+		        UPDATE user SET password = '".$password."' WHERE username = '".$username."'
 		    ";
 		    $result = $this->db->query($sql);
 		    return $result;
