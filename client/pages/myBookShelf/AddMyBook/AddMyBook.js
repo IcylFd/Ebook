@@ -87,6 +87,9 @@ Page({
         isbn: this.data.addingBook.bookIsbn,
         wantbook: this.data.want,
         bookid: this.data.addingBook.bookID
+      },
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
       }
     })
     wx.showToast({
