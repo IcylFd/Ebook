@@ -1,19 +1,21 @@
 {
   "pages": [
+    
+    "pages/myBookShelf/myBookShelf",
     "pages/homePage/homePage",
     "pages/login/login",
     "pages/login/registe/registe",
-    
+    "pages/myBookShelf/AddMyBook/AddMyBook",
     "pages/index/index",
     
-    "pages/myBookShelf/myBookShelf",
+    
     "pages/mine/myCollection/myCollection",
     
     "pages/homePage/homePage_swiper_detail/homePage_swiper_detail",
     "pages/mine/mine",
     "pages/mine/exchangeRecord/exchangeRecord",
     "pages/mine/myCollection/toex/toex",
-    "pages/myBookShelf/AddMyBook/AddMyBook",
+    
     "pages/myBookShelf/myBookDetails/myBookDetails",
     "pages/exBook/exBook",
     "pages/exBook/exBook_detail/exBook_detail",
