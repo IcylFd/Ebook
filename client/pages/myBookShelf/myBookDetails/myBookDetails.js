@@ -26,6 +26,13 @@ Page({
           }
         }
         app.globalData.my_ = my_;
+        var havedBook_message_array = app.globalData.havedBook_message_array;
+        for (var i = 0; i < havedBook_message_array.length;i++){
+          if (that.data.bookid == havedBook_message_array[i].bookID){
+            havedBook_message_array.splice(i,1);
+          }
+        }
+        app.globalData.havedBook_message_array = havedBook_message_array;
         wx.navigateBack({
           
         })

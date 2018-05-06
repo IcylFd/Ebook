@@ -16,7 +16,6 @@ Page({
     want: ""
   },
   want_f: function(e){
-    console.log(e);
     this.setData({
       want: e.detail.value
     })
@@ -71,6 +70,7 @@ Page({
       }
     }
     app.globalData.book_message_array[app.globalData.book_message_array.length] = addingBook;
+    app.globalData.havedBook_message_array[app.globalData.havedBook_message_array.length]=addingBook;
     this.setData({
       addingBook: addingBook
     })
@@ -80,6 +80,13 @@ Page({
     }
     my_.userShelf[my_.userShelf.length] = addingShelf;
     app.globalData.my_ = my_;
+    wx.request({
+      url: 'https://2tmftt32.qcloud.la/Book/sjbook',
+      data: {
+        isbn: this.data.addingBook.bookIsbn,
+        wantbook: this.data.want
+      }
+    })
     wx.showToast({
       title: '上架成功',
       success: function(){
@@ -88,7 +95,6 @@ Page({
         })
       }
     })
-    console.log("a");
   }
 
 

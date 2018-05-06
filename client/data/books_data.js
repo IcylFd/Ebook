@@ -398,15 +398,123 @@ var local_database = {
 
   havedBook_message_array: [
     {
+      bookName: "撒哈拉的故事",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s6780941.jpg",
+      bookAuthor: "三毛",
+      bookSummary: "三毛作品中最脍炙人口当属《撒哈拉的故事》，本书由十几篇精彩动人的散文结合而成，其中《沙漠中的饭店》，是三毛适应荒凉单调的沙漠生活后，重新拾笔的第一篇文章，从此之后，三毛便写出一系列以沙漠为背景的故事，倾倒了全世界的华文读者。",
+      bookIsbn: "9787540455958",
+      bookID: "0",
+      bookClass: "文学",
+      onMyCollection: false
+    },
+    {
+      bookName: "偷影子的人",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s10339418.jpg",
+      bookAuthor: "马克•李维",
+      bookSummary: "《偷影子的人》是马克•李维的第10部作品，该书在法国首印45万册，位列全年销量排行榜的总冠军，法国媒体惊叹：“销售得比影子消失的速度还快！”这部作品完美展现了马克•李维温柔风趣的写作风格，有催人泪下的亲情、浪漫感人的爱情和不离不弃的友情，清新浪漫的气息和温柔感人的故事相互交织，带给读者笑中带泪的阅读感受，是一部唤醒童年回忆和内心梦想的温情疗愈小说。",
+      bookIsbn: "9787540455958",
+      bookID: "1",
+      bookClass: "小说",
+      onMyCollection: false
+    },
+    {
+      bookName: "数学之美",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s9114855.jpg",
+      bookAuthor: "吴军",
+      bookSummary: "作者吴军博士几乎把所有文章都重写了一遍，为的是把高深的数学原理讲得更加通俗易懂，让非专业读者也能领略数学的魅力。读者通过具体的例子学到的是思考问题的方式 —— 如何化繁为简，如何用数学去解决工程问题，如何跳出固有思维不断去思考创新。",
+      bookIsbn: "9787115282828",
+      bookID: "2",
+      bookClass: "文学",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "白夜行",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s4610502.jpg",
+      bookAuthor: "东野圭吾",
+      bookSummary: "只希望能手牵手在太阳下散步”，这个象征故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的故事片段像纪录片一样一一还原：没有痴痴相思，没有海枯石烂，只剩下一个冰冷绝望的诡计，最后一丝温情也被完全抛弃，万千读者在一曲救赎罪恶的凄苦爱情中悲切动容……",
+      bookIsbn: "9787544242516",
+      bookID: "3",
+      bookClass: "小说",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "沉默的大多数",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s29419068.jpg",
+      bookAuthor: "王小波",
+      bookSummary: "本书收录了王小波的杂文代表作，他以卓越的文采，众醉独醒的姿态对社会道德伦理、国学与新儒家、个体尊严以及小说、艺术等方面进行了酣畅淋漓的剖析，表达了有理有趣的观点。时隔二十年，依然如同清流一般，读来让人沉思，让人捧腹，让人拍案叫绝。",
+      bookIsbn: "9787530216590",
+      bookID: "4",
+      bookClass: "文学",
+      onMyCollection: false
+    },
+
+    {
       bookName: "粉墨",
       bookImage: "https://img3.doubanio.com/view/subject/l/public/s29731173.jpg",
       bookAuthor: "张天翼",
       bookSummary: "《粉墨》收入了张天翼十一篇散文，共三辑：《地下的铁》《出行记》《从透明到灰烬》，讲述了作者的私人生活以及亲人的故事。其中《租房记》描述了作者二十余年的租房史，《从透明到灰烬》讲述了姥姥从家族权威到“透明人”再到化为灰烬的过程，正如作者所言：那些关于亲人和故乡的回忆，是环绕着荆棘的果实，是我的珍宝，也令我痛苦。只有把它们讲出来，敷粉着墨地画在纸上，我才感到我驯服了它们，达成和解，获得平静。",
       bookIsbn: "9787530217979",
       bookID: "5",
-      classify: "",
+      bookClass: "文学",
       onMyCollection: false
     },
+    {
+      bookName: "夏日终曲",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s29720198.jpg",
+      bookAuthor: "安德烈·艾席蒙",
+      bookSummary: "《意大利里维埃拉，一个夏天，十七岁的少年埃利奥遇到大他六岁、前来意大利游历的美国大学生奥利弗。 两人彼此着迷、犹疑、试探，渐渐地，情感在流动中迸发。这场邂逅虽然为时只有六周，却给男孩留下了一生的印记，因为在那个闷热的仲夏，他发现了此生再也无法寻找到的东西 ……",
+      bookIsbn: "9787513598255",
+      bookClass: "小说",
+      bookID: "6",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "天朝的崩溃",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1681072.jpg",
+      bookAuthor: "茅海建",
+      bookSummary: "《天朝的崩溃》是作者系统研究鸦片战争十余年所得的成果。作者详尽考订了与战争相关的一系列重要史实，力图以当时的道德观念、思维方式与行为规范去理解历史，使许多在今人看来是荒谬的现象得以显示其在当时环境中的“合理性”。同时，通过对有关人物及其言行活动分析，观察清王朝在历史转折关头的作为，揭示历史进程中的偶然与必然。鸦片战争在中国近代史上影响重大，有关著述已出版不少。这本书的研究可谓推陈出新，作者一系列独到创见可能在学术界引起争议，相信这种争议将有助于深化中国近代史研究。",
+      bookClass: "历史",
+      bookIsbn: "9787108022943",
+      bookID: "7",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "明朝那些事儿（壹）",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1872653.jpg",
+      bookAuthor: "当年明月",
+      bookSummary: "从朱元璋的出身开始写起，到永乐大帝夺位的靖难之役结束为止。叙述了明朝最艰苦卓绝的开国过程。朱元璋pk陈友谅，谁堪问鼎天下？战太平、太湖大决战。卧榻之侧埋恶虎，铲除张士诚。徐达、常遇春等不世名将乘胜逐北破北元。更有明朝最大的谜团——永乐夺位、建文失踪的靖难之役。",
+      bookClass: "历史",
+      bookIsbn: "9787505722460",
+      bookID: "8",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "麦田里的守望者",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s2738366.jpg",
+      bookAuthor: "J·D·塞林格",
+      bookSummary: "霍尔顿是出身于富裕中产阶级的十六岁少年，在第四次被开除出学校之后，不敢贸然回家，只身在美国最繁华的纽约城游荡了一天两夜，住小客店，逛夜总会，滥交女友，酗酒……他看到了资本主义社会的种种丑恶，接触了各式各样的人物，其中大部分是“假模假式的”伪君子。他尽管看不惯世道，却只好苦闷、彷惶，用种种不切实际的幻想安慰自己，自欺欺人，最后仍不免对现实社会妥协，成不了真正的叛逆，这可以说是作者塞林格和他笔下人物霍尔顿的悲剧所在。",
+      bookClass: "小说",
+      bookIsbn: "9787805676135",
+      bookID: "9",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "高等数学A1",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s10403728.jpg",
+      bookAuthor: "同济大学数学系",
+      bookSummary: "本书是同济大学数学系编《高等数学》的第六版，依据最新的“工科类本科数学基础课程教学基本要求”，为高等院校工科类各专业学生修订而成。本次修订时对教材的深广度进行了适度的调整，使学习本课程的学生都能达到合格的要求，并设置部分带*号的内容以适应分层次教学的需要；吸收国内外优秀教材的优点对习题的类型和数量进行了凋整和充实，以帮助学生提高数学素养、培养创新意识、掌握运用数学工具去解决实际问题的能力；对书中内容进一步锤炼和调整，将微分方程作为一元函数微积分的应用移到上册，更有利于学生的学习与掌握。",
+      bookClass: "教材",
+      bookIsbn: "9787040205497",
+      bookID: "10",
+      onMyCollection: false
+    },
+
     {
       bookName: "数据库系统简明教程",
       bookImage: "https://img3.doubanio.com/view/subject/l/public/s11148145.jpg",
@@ -439,6 +547,29 @@ var local_database = {
       bookID: "13",
       onMyCollection: false
     },
+
+    {
+      bookName: "数据结构（C语言版）",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s26540471.jpg",
+      bookAuthor: "严蔚敏/吴伟民",
+      bookSummary: "《数据结构》（C语言版）是为“数据结构”课程编写的教材，也可作为学习数据结构及其算法的C程序设计的参数教材。",
+      bookClass: "教材",
+      bookIsbn: "9781302023683",
+      bookID: "14",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "亲爱的安德烈",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s3993878.jpg",
+      bookAuthor: "龙应台/[德]安德烈",
+      bookSummary: "安德烈十四岁的时候，龙应台离开欧洲，返回台湾，就任台北市首任文化局长。等她卸任回到儿子身边，安德烈已是一个一百八十四公分高的十八岁的小伙子，坐在桌子另一边，有一点“冷”地看着妈妈。他们是两代人，年龄相差三十年；他们也是两国人，中间横着东西文化。失去小男孩安安没关系，但龙应台一定要认识成熟的大学生安德烈。于是，母子俩用了三年时间互相通信。龙应台“认识了人生里第一个十八岁的人”，安德烈“也第一次认识了自己的母亲”。",
+      bookClass: "文学",
+      bookIsbn: "9787020068616",
+      bookID: "15",
+      onMyCollection: false
+    },
+
     {
       bookName: "云图",
       bookImage: "https://img3.doubanio.com/view/subject/l/public/s10213984.jpg",
@@ -461,10 +592,7 @@ var local_database = {
       onMyCollection: false
     }
   ],
-  ExchangeRecord_array: [
-
-  ],
-
+  
 
 
   my_: {
