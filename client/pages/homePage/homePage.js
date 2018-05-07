@@ -150,7 +150,6 @@ Page({
         })
       }
     }
-
   }
   // onShareAppMessage: function(e){
   //   if(e.from==="button"){

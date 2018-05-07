@@ -19,7 +19,6 @@ Page({
     this.setData({
       book_note: book_note
     })
-    console.log(book_note);
   },
 
   onAvatorTap:function(event){

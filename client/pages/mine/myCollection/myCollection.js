@@ -78,6 +78,7 @@ Page({
     var user = [];
     for (var x = 0; x < collection.length; x++) {
       var bookid = collection[x];
+      user[x] = "";
       for (var i = 0; i < all_user.length; i++) {
         for (var j = 0; j < all_user[i].userShelf.length; j++) {
           if (bookid == all_user[i].userShelf[j].bookId) {
@@ -93,18 +94,28 @@ Page({
     }
     var note = [];
     for (var i = 0; i < user.length; i++) {
-      note[i] = {
-        bookName: collection_array[i].bookName,
-        bookImage: collection_array[i].bookImage,
-        bookId: collection_array[i].bookID,
-        bookAuthor: collection_array[i].bookAuthor,
-        userid: user[i].userid,
-        userimage: user[i].userimage,
-        username: user[i].username,
-        want: user[i].want,
-        onmycollection: 'true'
-      }
-    }
+      if(user[i].userid){
+        note[i] = {
+          bookName: collection_array[i].bookName,
+          bookImage: collection_array[i].bookImage,
+          bookId: collection_array[i].bookID,
+          bookAuthor: collection_array[i].bookAuthor,
+          userid: user[i].userid,
+          userimage: user[i].userimage,
+          username: user[i].username,
+          want: user[i].want,
+          onmycollection: 'true'
+        }
+      }else{
+        note[i] = {
+          bookName: collection_array[i].bookName,
+          bookImage: collection_array[i].bookImage,
+          bookId: collection_array[i].bookID,
+          bookAuthor: collection_array[i].bookAuthor,
+          onmycollection: 'true'
+        }
+      }      
+    }    
     this.setData({
       note: note
     })

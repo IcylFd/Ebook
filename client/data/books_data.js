@@ -17,6 +17,36 @@ var local_database = {
 
   book_message_array: [
     {
+      bookName: "月亮和六便士",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s2659208.jpg",
+      bookAuthor: "威廉·萨默塞特·毛姆",
+      bookSummary: "《月亮和六便士》说问世后，以情节入胜、文字深刻在文坛轰动一时，人们争相传看。在小说中，毛姆用第一人称的叙述手法，借“我”之口，叙述整个故事，有人认为这篇小说的原型是法国印象派画家高更，这更增加了它的传奇色彩，受到了全世界读者的关注。",
+      bookIsbn: "9787532739547",
+      bookID: "18",
+      bookClass: "小说",
+      onMyCollection: false
+    },
+    {
+      bookName: "嫌疑人X的献身",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s3254244.jpg",
+      bookAuthor: "东野圭吾",
+      bookSummary: "《百年一遇的数学天才石神，每天唯一的乐趣，便是去固定的便当店买午餐，只为看一眼在便当店做事的邻居靖子。靖子与女儿相依为命，失手杀了前来纠缠的前夫。石神提出由他料理善后。石神设了一个匪夷所思的局，令警方始终只能在外围敲敲打打，根本无法与案子沾边。石神究竟使用了什么手法？",
+      bookIsbn: "9787544241694",
+      bookID: "19",
+      bookClass: "悬疑",
+      onMyCollection: false
+    },
+    {
+      bookName: "猫城记",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s4038527.jpg",
+      bookAuthor: "老舍",
+      bookSummary: "《猫城记》主要内容：一架飞往火星的飞机在碰撞到火星的一刹那机毁人亡，只剩下“我”幸存下来，却被一群长着猫脸的外星人带到了他们的猫城，开始了艰难的外星生活。猫人也有历史，拥有两万多年的文明，在古代他们也与外国打过仗，而且打胜过，可是在最近五百年中，自相残杀的结果叫他们完全把打外国人的观念忘掉，而一致的对内，导致文明的退化。而“我”亲眼目睹了一场猫人与矮子兵的战争，以猫城全城覆没而结束了这座私欲日益彭胀的外星文明古城。",
+      bookIsbn: "9787020072293",
+      bookID: "20",
+      bookClass: "科幻",
+      onMyCollection: false
+    },
+    {
       bookName: "夏日终曲",
       bookImage: "https://img1.doubanio.com/view/subject/l/public/s29720198.jpg",
       bookAuthor: "安德烈·艾席蒙",
@@ -211,6 +241,7 @@ var local_database = {
       bookID: "17",
       onMyCollection: false
     }
+
   ],
   user_array: [
     {
