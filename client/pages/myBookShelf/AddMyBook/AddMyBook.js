@@ -86,7 +86,7 @@ Page({
       data: {
         isbn: this.data.addingBook.bookIsbn,
         wantbook: this.data.want,
-        bookid: this.data.addingBook.bookID
+        book_id: this.data.addingBook.bookID
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded'

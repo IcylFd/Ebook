@@ -38,7 +38,7 @@
               </view>
               <view class='content_button'>
                 <image src='{{ item.onMyCollection ? "../../images/like1.png" :"../../images/like.png" }}' bindtap='clickLike' bindload='' data-booKID="{{item.bookID}}" data-index='{{index}}' data-onMyCollection='{{item.onMyCollection}}' ></image>
-                <image src='../../images/share.png'></image>
+                <button class='share_button' ><image src='../../images/share.png'></image></button>
               </view>
             </view>
           </swiper-item>
