@@ -18,7 +18,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      booksArray: app.globalData.book_message_array
+      booksArray: app.globalData.havedBook_message_array
     })
   }
 
