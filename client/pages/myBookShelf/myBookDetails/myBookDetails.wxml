@@ -11,7 +11,7 @@
 </view>
 <view class='details'>
   <text class='left'>想换书籍</text>
-  <text class='right'>白夜行</text>
+  <text class='right'>{{want}}</text>
 </view>
 <view class='details'>
   <text class='left'>距下架还有</text>

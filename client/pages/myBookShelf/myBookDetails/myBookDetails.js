@@ -11,6 +11,14 @@ Page({
       bookimage: options.bookimage,
       bookauthor: options.bookauthor
     })
+    var my_ = app.globalData.my_;
+    for(var i=0;i<my_.userShelf.length;i++){
+      if(this.data.bookid == my_.userShelf[i].bookId){
+        this.setData({
+          want: my_.userShelf[i].want
+        })
+      }
+    }
   },
   confirm_delete: function(e){
     var that = this;
