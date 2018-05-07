@@ -15,7 +15,6 @@ var local_database = {
     }
   ],
 
-
   book_message_array: [
     {
       bookName: "撒哈拉的故事",

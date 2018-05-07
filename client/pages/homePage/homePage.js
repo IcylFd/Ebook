@@ -62,7 +62,7 @@ Page({
 
   // 判断全部书籍中的书是否在我的收藏里
   matchBook: function () {
-    if (this.data.swiper_type) {
+    // if (this.data.swiper_type) {
       var book_message_array = this.data.book_message_array;
       var that = this;
       for (var i = 0; i < book_message_array.length; i++) {
@@ -73,9 +73,9 @@ Page({
           })
         }
       }
-    } else {
+    // } else {
       var havedBook_message_array = this.data.havedBook_message_array;
-      var that = this;
+      // var that = this;
       for (var i = 0; i < havedBook_message_array.length; i++) {
         if (that.book_on_my_collection(havedBook_message_array[i].bookID) == true) {
           var path = 'havedBook_message_array[' + i + '].onMyCollection';
@@ -84,7 +84,7 @@ Page({
           })
         }
       }
-    }
+    // }
   },
   book_on_my_collection: function (bookId) {
     var my_ = this.data.my_;
@@ -142,5 +142,16 @@ Page({
     }
 
   },
-
+  // onShareAppMessage: function(e){
+  //   if(e.from==="button"){
+  //     console.log(e.target);
+  //   }
+  //   return{
+  //     title: "aa",
+  //     path: '/pages/homePage/homePage_swiper_detail?id=123',
+  //     success: function(e){
+  //       console.log(e);
+  //     }
+  //   }
+  // }
 })
