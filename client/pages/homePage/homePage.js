@@ -41,11 +41,13 @@ Page({
     this.setData({
       swiper_type: true
     })
+    this.matchBook();
   },
   choose_swiper2: function (e) {
     this.setData({
       swiper_type: false
     })
+    this.matchBook();
   },
 
 
@@ -62,32 +64,40 @@ Page({
 
   // 判断全部书籍中的书是否在我的收藏里
   matchBook: function () {
-    // if (this.data.swiper_type) {
       var book_message_array = this.data.book_message_array;
       var that = this;
       for (var i = 0; i < book_message_array.length; i++) {
         if (that.book_on_my_collection(book_message_array[i].bookID) == true) {
           var path = 'book_message_array[' + i + '].onMyCollection';
-          this.setData({
+          that.setData({
             [path]: true
+          })
+        }else{
+          var path = 'book_message_array[' + i + '].onMyCollection';
+          that.setData({
+            [path]: false
           })
         }
       }
-    // } else {
+    
       var havedBook_message_array = this.data.havedBook_message_array;
-      // var that = this;
+      
       for (var i = 0; i < havedBook_message_array.length; i++) {
         if (that.book_on_my_collection(havedBook_message_array[i].bookID) == true) {
           var path = 'havedBook_message_array[' + i + '].onMyCollection';
-          this.setData({
+          that.setData({
             [path]: true
           })
+        }else{
+          var path = 'havedBook_message_array[' + i + '].onMyCollection';
+          that.setData({
+            [path]: false
+          })
         }
-      }
-    // }
+      }  
   },
   book_on_my_collection: function (bookId) {
-    var my_ = this.data.my_;
+    var my_ = app.globalData.my_;
     for (var i = 0; i < my_.userCollection.length; i++) {
       if (bookId == my_.userCollection[i]) {
         return true;
@@ -141,7 +151,7 @@ Page({
       }
     }
 
-  },
+  }
   // onShareAppMessage: function(e){
   //   if(e.from==="button"){
   //     console.log(e.target);

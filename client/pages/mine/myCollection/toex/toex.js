@@ -19,9 +19,19 @@ Page({
     this.setData({
       book_note: book_note
     })
+    console.log(book_note);
   },
 
   onAvatorTap:function(event){
+    var userId = this.data.book_note.userid;
+    var user_array = app.globalData.user_array;
+    var u_array;
+    for(var i=0;i<user_array.length;i++){
+      if(userId == user_array[i].userId){
+        u_array = user_array[i];
+      }
+    }
+    app.globalData.u_array = u_array;
     wx.navigateTo({
       url: '../../../homePage/others_detail/others_detail',
     })

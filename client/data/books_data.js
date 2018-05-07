@@ -17,6 +17,39 @@ var local_database = {
 
   book_message_array: [
     {
+      bookName: "夏日终曲",
+      bookImage: "https://img1.doubanio.com/view/subject/l/public/s29720198.jpg",
+      bookAuthor: "安德烈·艾席蒙",
+      bookSummary: "《意大利里维埃拉，一个夏天，十七岁的少年埃利奥遇到大他六岁、前来意大利游历的美国大学生奥利弗。 两人彼此着迷、犹疑、试探，渐渐地，情感在流动中迸发。这场邂逅虽然为时只有六周，却给男孩留下了一生的印记，因为在那个闷热的仲夏，他发现了此生再也无法寻找到的东西 ……",
+      bookIsbn: "9787513598255",
+      bookClass: "小说",
+      bookID: "6",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "天朝的崩溃",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1681072.jpg",
+      bookAuthor: "茅海建",
+      bookSummary: "《天朝的崩溃》是作者系统研究鸦片战争十余年所得的成果。作者详尽考订了与战争相关的一系列重要史实，力图以当时的道德观念、思维方式与行为规范去理解历史，使许多在今人看来是荒谬的现象得以显示其在当时环境中的“合理性”。同时，通过对有关人物及其言行活动分析，观察清王朝在历史转折关头的作为，揭示历史进程中的偶然与必然。鸦片战争在中国近代史上影响重大，有关著述已出版不少。这本书的研究可谓推陈出新，作者一系列独到创见可能在学术界引起争议，相信这种争议将有助于深化中国近代史研究。",
+      bookClass: "历史",
+      bookIsbn: "9787108022943",
+      bookID: "7",
+      onMyCollection: false
+    },
+
+    {
+      bookName: "明朝那些事儿（壹）",
+      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1872653.jpg",
+      bookAuthor: "当年明月",
+      bookSummary: "从朱元璋的出身开始写起，到永乐大帝夺位的靖难之役结束为止。叙述了明朝最艰苦卓绝的开国过程。朱元璋pk陈友谅，谁堪问鼎天下？战太平、太湖大决战。卧榻之侧埋恶虎，铲除张士诚。徐达、常遇春等不世名将乘胜逐北破北元。更有明朝最大的谜团——永乐夺位、建文失踪的靖难之役。",
+      bookClass: "历史",
+      bookIsbn: "9787505722460",
+      bookID: "8",
+      onMyCollection: false
+    },
+
+    {
       bookName: "撒哈拉的故事",
       bookImage: "https://img3.doubanio.com/view/subject/l/public/s6780941.jpg",
       bookAuthor: "三毛",
@@ -79,39 +112,7 @@ var local_database = {
       bookClass: "文学",
       onMyCollection: false
     },
-    {
-      bookName: "夏日终曲",
-      bookImage: "https://img1.doubanio.com/view/subject/l/public/s29720198.jpg",
-      bookAuthor: "安德烈·艾席蒙",
-      bookSummary: "《意大利里维埃拉，一个夏天，十七岁的少年埃利奥遇到大他六岁、前来意大利游历的美国大学生奥利弗。 两人彼此着迷、犹疑、试探，渐渐地，情感在流动中迸发。这场邂逅虽然为时只有六周，却给男孩留下了一生的印记，因为在那个闷热的仲夏，他发现了此生再也无法寻找到的东西 ……",
-      bookIsbn: "9787513598255",
-      bookClass: "小说",
-      bookID: "6",
-      onMyCollection: false
-    },
-
-    {
-      bookName: "天朝的崩溃",
-      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1681072.jpg",
-      bookAuthor: "茅海建",
-      bookSummary: "《天朝的崩溃》是作者系统研究鸦片战争十余年所得的成果。作者详尽考订了与战争相关的一系列重要史实，力图以当时的道德观念、思维方式与行为规范去理解历史，使许多在今人看来是荒谬的现象得以显示其在当时环境中的“合理性”。同时，通过对有关人物及其言行活动分析，观察清王朝在历史转折关头的作为，揭示历史进程中的偶然与必然。鸦片战争在中国近代史上影响重大，有关著述已出版不少。这本书的研究可谓推陈出新，作者一系列独到创见可能在学术界引起争议，相信这种争议将有助于深化中国近代史研究。",
-      bookClass: "历史",
-      bookIsbn: "9787108022943",
-      bookID: "7",
-      onMyCollection: false
-    },
-
-    {
-      bookName: "明朝那些事儿（壹）",
-      bookImage: "https://img3.doubanio.com/view/subject/l/public/s1872653.jpg",
-      bookAuthor: "当年明月",
-      bookSummary: "从朱元璋的出身开始写起，到永乐大帝夺位的靖难之役结束为止。叙述了明朝最艰苦卓绝的开国过程。朱元璋pk陈友谅，谁堪问鼎天下？战太平、太湖大决战。卧榻之侧埋恶虎，铲除张士诚。徐达、常遇春等不世名将乘胜逐北破北元。更有明朝最大的谜团——永乐夺位、建文失踪的靖难之役。",
-      bookClass: "历史",
-      bookIsbn: "9787505722460",
-      bookID: "8",
-      onMyCollection: false
-    },
-
+    
     {
       bookName: "麦田里的守望者",
       bookImage: "https://img3.doubanio.com/view/subject/l/public/s2738366.jpg",
